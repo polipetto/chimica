@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>
+    <title>ESERCIZI</title>
+    <link rel="stylesheet" href="CSS\style-esercizi.css">
+    <link rel="icon" href="Immagini\icona.png" type="image/png" />
+</head>
+<body>
+
+    <ul id="barra">
+        <li class="celle"><a href=""><img style="width: 20px;align-self: center;" src="Immagini\icona.png"></a></li>
+        <li class="celle"><a href="">Crediti</a></li>
+        <li class="celle" style="width: 128.69px;overflow: visible;"><a onmouseover="mouseOver()" onmouseout="mouseOut()" href="">Naviga</a>
+            <div id="ez" onmouseover="mouseOver()" onmouseout="mouseOut()">
+            <div class="container" >
+                <div class="bob"><a href="Alcani.html">Alcani</a></div>
+                <div class="bob"><a href="Alcheni.html">Alcheni</a></div>
+                <div class="bob"><a href="Alchini.html">Alchini</a></div>
+                <div class="bob"><a href="AlfifaticiCatenaAperta.html">Catena Aperta</a></div>
+                <div class="bob"><a href="Alifatici.html">Alifatici</a></div>
+                <div class="bob"><a href="AlifaticiCiclici.html">Ciclici</a></div>
+                <div class="bob"><a href="Aromatici.html">Aromatici</a></div>
+                <div class="bob"><a href="Cicloalcani.html">Cicloalcani</a></div>
+                <div class="bob"><a href="Cicloalcheni.html">Cicloalcheni</a></div>
+                <div class="bob"><a href="Idrocarburi.html">Idrocarburi</a></div>
+                <div class="bob"><a href="Policiclici.html">Policiclici</a></div>
+                <div class="bob"><a href="SerieBenzenica.html">Serie Benzenica</a></div>
+            </div>
+            </div>
+        </li>
+        <li class="celle"><a href="">Esercizi</a></li>
+    </ul>
+
+
+
+<div id="aperta">
+    <div id="container" >
+        <div id="start" style="display: flex; justify-content: center; align-items: center;"><p>SCELTA MULTIPLA</p></div>
+        <div id="quiz" style="display: none;padding: 10px;overflow: visible;">
+            <div id="question"></div>
+            <div id="qImg" style="padding: 5px;"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="JS\app-esercizi.js"></script>
+
+    <!--secondo test-->
+    <div id="frame001">
+        <div id="color001">
+            <div id="center001">
+                <h2><strong>COMPLETAMENTO</strong></h2>
+                <p><strong>Parole:</strong> Paraffine - Struttura - Combustione - Conformazionale - Alogenazione</p>
+                </div> <br/>
+                <p> Gli alcani possono subire due tipi di reazioni: 
+                        <input type="text" class="check003" id="input001" size="15" /><text class="button002" id="check001"></text>e  
+                        <input id="input002" size="15" /><text class="button002" id="check002"></text>. 
+                    <br><br>
+                    Alcani o 
+                        <input id="input003" size="15" /> <text class="button002" id="check003"></text> 
+                    sono idrocarburi alifatici a catena aperta saturi per la presenza di legami semplici (C-C). Tutti gli atomi del carbonio sono ibridati sp3.  
+                    <br><br>
+                    Gli alcani possono avere isomeria di 
+                        <input id="input004" size="15" /><text class="button002" id="check004"></text> e di 
+                        <input id="input005" size="15" /><text class="button002" id="check005"></text>.</p>
+                    
+                    <br>
+                    
+                
+                    <div id="disappear001"><div id="center001">
+                
+                        <div id="bottone">
+                            <div class="button001" onclick="submit001()">Controlla</div>
+                        </div>
+                    </div></div><br />
+                <div id="center001"><p id="message001"></p><p id="reload001"></p></div>
+                <br/>              
+        </div>
+    </div>
+</div>
+    <br>
+    <script>
+        var bravo=true;
+        function submit001() {
+            b = document.getElementById("input001").value.toUpperCase();
+            c = document.getElementById("input002").value.toUpperCase();
+            d = document.getElementById("input003").value.toUpperCase();
+            e = document.getElementById("input004").value.toUpperCase();
+            f = document.getElementById("input005").value.toUpperCase();
+            if (b == "ALOGENAZIONE") {
+                
+                input001.value = b;
+                check001.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                bravo = false;
+                input001.value = b;
+                check001.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if (c == "COMBUSTIONE") {
+              
+                input002.value = c;
+                check002.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                bravo = false;
+                input002.value = c;
+                check002.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if (d == "PARAFFINE") {
+              
+                input003.value = d;
+                check003.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                bravo = false;
+                input003.value = d;
+                check003.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if (e == "STRUTTURA") {
+               
+                input004.value = e;
+                check004.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                bravo = false;
+                input004.value = e;
+                check004.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if (f == "CONFORMAZIONALE") {
+        
+                input005.value = f;
+                check005.innerHTML = "<text class=button002>" + "✔" + "</text>";
+            } else {
+                bravo = false;
+                input005.value = f;
+                check005.innerHTML = "<text class=button002>" + "✖" + "</text>";
+            }
+
+            if (bravo) {
+                message001.innerHTML = "Congratulazioni!";
+                disappear001.innerHTML = "";
+                reload001.innerHTML = "<div id=center001><button class=button001 onclick=repeat001()>Repeat</button></div>";
+            }
+        }
+
+            function repeat001() {
+                location.reload();
+            }
+    </script>
+</body>
+</html>

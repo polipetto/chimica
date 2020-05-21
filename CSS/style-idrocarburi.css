@@ -1,0 +1,185 @@
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    background-color: #d6beeb;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #333;
+    
+  }
+
+
+
+body {
+    background-color:#d6beeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+#foglio {
+    opacity: 0%;
+    transition: 0.5s;
+}
+
+
+#wow {
+    margin: 17.5% 0px;
+    transition: 0.5s;
+    
+}
+
+#logo {
+    transition: 0.5s;
+    animation: budino 2s;
+    width: 1400px;
+}
+
+.kawaii {
+  z-index: -1;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.immcentr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes budino{
+    from {
+        stroke-dasharray: 152;
+        stroke-dashoffset: 50;
+    }
+    to {
+        stroke-dasharray: 418;
+        stroke-dashoffset: 80;
+    }
+    
+}
+
+table {
+  width: 1400px;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  border: 2.5px solid #333;
+  font-size: 20px;
+  box-shadow: 10px 10px black;
+}
+
+#topt {
+    border-bottom: none;
+}
+
+#bott {
+    border-top: none;
+}
+
+.tabelline {
+  
+  width: 1350px;
+  padding: 25px;
+  box-shadow: none; 
+  background-color: black; 
+  color: white; 
+  border: none; 
+}
+
+#barra {
+    list-style-type: none;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+    height: 53px;
+  }
+  
+  .celle {
+    float: left;
+  }
+  
+  .celle a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .celle a:hover {
+    background-color: #111;
+  }
+
+/* robo a destra */ /* robo a destra */ /* robo a destra */
+.mappola{
+  float: right;
+  display: block;
+}
+
+/* mappa idrocarburi */
+#robodestra {
+  display: grid;
+  grid-template-columns: 893.61px 66.39px;
+  grid-template-rows: 53px 0px 25px;
+}
+
+#schemolo {
+  border-radius: 10px 10px 10px 10px;
+  display: none;
+}
+
+#freccetto {
+  background-color: #333;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* fine */ /* fine */ /* fine */ /* fine */
+
+/* menu idrocarburi */
+.container {
+  background-color: #333;
+  box-shadow: 10px 10px  black;
+  overflow: visible;
+  width: 426.06px;
+  display: grid;
+                 grid-template-columns: 1fr 1fr 1fr;
+                 grid-template-rows: 1fr 1fr 1fr 1fr;
+                 grid-gap: 0;
+}
+
+.bob a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.bob a:hover {
+  background-color: #111;
+}
+
+#ez  {
+  display: none;
+}
+
