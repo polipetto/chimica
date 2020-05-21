@@ -1,7 +1,7 @@
 <html>
 
 	<head> 
-		<title> ALIFATICI </title>
+		<title> Alifatici </title>
 		<link rel="stylesheet" type="text/css" href="CSS\style-alifatici.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 		<script type="text/javascript" src="JS\app-alifatici.js"></script>
@@ -31,13 +31,55 @@
                 </div>
                 </div>
             </li>
-            <li class="celle"><a href="">Esercizi</a></li>
+			<li class="celle"><a href="">Esercizi</a></li>
+			<li class="mappola">          <!--mappa a destraaaaaaa-->
+                <div id="robodestra">
+                    <div style="grid-row: 1 / 2;grid-column: 2 / 3;">
+                        <a onClick="mappadestra()"><img style="height: 50px;filter: invert(100%);" src="Immagini\mappa.png" ></a>
+                    </div>              
+                    <div id="schemolo" style="grid-row: 2 / 3;grid-column: 1 / 3;"> <!-- mappa invisibile-->
+                        <img style="border-radius: 0px 0px 0px 10px;" src="Immagini\Immagine generale nera.png" usemap="#idrocarburi">
+                        <map name="idrocarburi">
+                            <area target="_self" alt="Idrocarburi" title="Idrocarburi" href="Idrocarburi.html" coords="409,34,674,62" shape="rect">
+                            <area target="_self" alt="Alifatici" title="Alifatici" href="Alifatici.html" coords="314,103,377,104,389,107,395,111,398,118,394,127,381,135,295,135,275,131,269,122,269,110,281,103" shape="poly">
+                            <area target="_self" alt="Aromatici" title="Aromatici" href="Aromatici.html" coords="720,115,727,107,739,102,756,103,790,103,823,102,851,104,865,112,868,119,865,124,858,130,851,135,739,134,732,132,727,130,720,123" shape="poly">
+                            <area target="_self" alt="Catena Aperta" title="Catena Aperta" href="AlfifaticiCatenaAperta.html" coords="44,155,215,154,224,155,226,163,225,179,224,185,48,187,40,181,40,159" shape="poly">
+                            <area target="_self" alt="Ciclici" title="Ciclici" href="AlifaticiCiclici.html" coords="499,156,534,155,591,155,596,162,595,170,595,180,592,189,528,187,493,188,485,186,482,160,488,156" shape="poly">
+                            <area target="_self" alt="Policiclici" title="Policiclici" href="Policiclici.html" coords="677,155,769,156,780,155,784,163,784,181,781,189,674,187,665,186,662,178,663,157" shape="poly">
+                            <area target="_self" alt="Serie Benzenica" title="Serie Benzenica" href="SerieBenzenica.html" coords="835,156,937,155,946,156,950,163,950,183,946,189,938,191,833,191,826,190,821,183,820,170,821,160,828,153" shape="poly">
+                            <area target="_self" alt="Alcani" title="Alcani" href="Alcani.html" coords="11,307,117,308,118,343,11,344" shape="poly">
+                            <area target="_self" alt="Alcheni" title="Alcheni" href="Alcheni.html" coords="132,308,239,308,239,344,132,342" shape="poly">
+                            <area target="_self" alt="Alchini" title="Alchini" href="Alchini.html" coords="248,308,354,307,353,342,248,344" shape="poly">
+                            <area target="_self" alt="Cicloalcani" title="Cicloalcani" href="Cicloalcani.html" coords="379,308,504,310,507,343,382,344" shape="poly">
+                            <area target="_self" alt="Cicloalcheni" title="Cicloalcheni" href="Cicloalcheni.html" coords="549,308,680,308,681,344,548,341" shape="poly">
+                        </map>
+                    </div>
+                    <div id="freccetto" style="grid-row: 3 / 4;grid-column: 2 / 3;"> <!--freccetto-->
+                        <a onClick="mappadestra()">
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                        <svg id="freccetta" style="transition: 0.5s;" width="30% "version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 491.996 491.996" style="enable-background:new 0 0 491.996 491.996;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848
+                                    L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128
+                                    c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084
+                                    c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224
+                                    C491.996,136.902,489.204,130.046,484.132,124.986z"/>
+                            </g>		</g>		<g>			</g>		<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>
+                        </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>     <!--fine mappa a destraaaaaaaa-->
         </ul>
 		
 		
 	
 		
 		<div  id="foglio">
+			<div id="wow">
 			<svg height="37.33"  viewBox="0 0 156 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M18.604 21.42H7.66L5.644 27H2.188L11.26 2.052H15.04L24.076 27H20.62L18.604 21.42ZM17.668 18.756L13.132 6.084L8.596 18.756H17.668Z" fill="black"/>
 				<path d="M31.3058 24.336H40.0898V27H28.0298V1.908H31.3058V24.336Z" fill="black"/>
@@ -50,7 +92,7 @@
 				<path d="M154.247 1.908V27H150.971V1.908H154.247Z" fill="black"/>
 				<path fill-rule="evenodd" clip-rule="evenodd" d="M20.62 27L18.604 21.42H7.66L5.644 27H2.188L11.26 2.052H15.04L24.076 27H20.62ZM8.36197 22.42L6.34597 28H0.7603L10.5596 1.052H15.7414L25.5018 28H19.918L17.902 22.42H8.36197ZM13.132 6.084L8.596 18.756H17.668L13.132 6.084ZM13.132 9.05123L10.0161 17.756H16.2479L13.132 9.05123ZM41.0898 23.336V28H27.0298V0.908H32.3058V23.336H41.0898ZM31.3058 24.336V1.908H28.0298V27H40.0898V24.336H31.3058ZM47.8449 0.908V28H42.5689V0.908H47.8449ZM67.6123 0.908V5.572H56.7043V12.032H65.5602V16.696H56.7043V28H51.4282V0.908H67.6123ZM55.7043 15.696H64.5602V13.032H55.7043V4.572H66.6123V1.908H52.4282V27H55.7043V15.696ZM87.4169 27L85.4009 21.42H74.4569L72.4409 27H68.9849L78.0569 2.052H81.8369L90.8729 27H87.4169ZM75.1589 22.42L73.1429 28H67.5572L77.3564 1.052H82.5383L92.2986 28H86.7149L84.6989 22.42H75.1589ZM79.9289 6.084L75.3929 18.756H84.4649L79.9289 6.084ZM79.9289 9.05124L76.813 17.756H83.0448L79.9289 9.05124ZM111.271 0.908V5.572H104.431V28H99.1547V5.572H92.2787V0.908H111.271ZM100.155 4.572V27H103.431V4.572H110.271V1.908H93.2787V4.572H100.155ZM118.579 0.908V28H113.303V0.908H118.579ZM145.658 20.692C144.72 22.6148 143.378 24.1415 141.631 25.272C139.591 26.568 137.203 27.216 134.467 27.216C132.139 27.216 130.015 26.676 128.095 25.596C126.199 24.492 124.699 22.968 123.595 21.024C122.491 19.08 121.939 16.884 121.939 14.436C121.939 11.988 122.491 9.792 123.595 7.848C124.699 5.88 126.199 4.344 128.095 3.24C130.015 2.136 132.139 1.584 134.467 1.584C137.203 1.584 139.591 2.244 141.631 3.564C143.381 4.69641 144.725 6.23508 145.662 8.18C145.817 8.50218 145.962 8.83552 146.095 9.18H142.171C141.475 7.668 140.467 6.504 139.147 5.688C137.851 4.872 136.291 4.464 134.467 4.464C132.715 4.464 131.143 4.872 129.751 5.688C128.359 6.504 127.267 7.668 126.475 9.18C125.683 10.668 125.287 12.42 125.287 14.436C125.287 16.428 125.683 18.18 126.475 19.692C127.267 21.18 128.359 22.332 129.751 23.148C131.143 23.964 132.715 24.372 134.467 24.372C136.291 24.372 137.851 23.976 139.147 23.184C140.467 22.368 141.475 21.204 142.171 19.692H146.095C145.96 20.0365 145.815 20.3698 145.658 20.692ZM138.622 22.3325C139.762 21.6276 140.642 20.6203 141.262 19.2739L141.53 18.692H147.558L147.026 20.0553C146.019 22.6384 144.401 24.6705 142.174 26.1116L142.167 26.1161C139.946 27.5269 137.367 28.216 134.467 28.216C131.977 28.216 129.683 27.6366 127.604 26.4676L127.598 26.4639L127.591 26.4602C125.54 25.2655 123.915 23.6124 122.725 21.5178C121.528 19.4092 120.939 17.0402 120.939 14.436C120.939 11.833 121.527 9.46502 122.723 7.3572C123.912 5.23892 125.537 3.57199 127.591 2.37582L127.596 2.37308C129.676 1.17737 131.973 0.584 134.467 0.584C137.37 0.584 139.952 1.28689 142.174 2.72443C144.404 4.16725 146.021 6.21336 147.027 8.81978L147.553 10.18H141.53L141.262 9.59814C140.642 8.25118 139.761 7.2436 138.621 6.5386L138.614 6.53426C137.506 5.83648 136.139 5.464 134.467 5.464C132.877 5.464 131.482 5.83225 130.256 6.5507C129.035 7.26644 128.071 8.28784 127.36 9.64401L127.357 9.64986C126.656 10.9674 126.287 12.5519 126.287 14.436C126.287 16.2919 126.654 17.8787 127.359 19.2247C128.068 20.5558 129.032 21.5676 130.256 22.2853C131.482 23.0037 132.877 23.372 134.467 23.372C136.142 23.372 137.513 23.0097 138.622 22.3325ZM155.247 0.908V28H149.971V0.908H155.247ZM46.8449 1.908H43.5689V27H46.8449V1.908ZM117.579 1.908H114.303V27H117.579V1.908ZM154.247 1.908H150.971V27H154.247V1.908Z" fill="black"/>
 				</svg>
-				
+			</div>
 				
 			
 		<table  cellpadding="25" >			
@@ -69,9 +111,9 @@
 		<div class="menuone">
 			<div class="catena">
 				<div style="grid-column: 1 / 4;"><p><a href="AlfifaticiCatenaAperta.html" style="text-decoration: none;font-weight: bold;">CATENA APERTA</a></p></div>
-				<div><p style="font-weight: bold;">Alcani</p></div>
-				<div><p style="font-weight: bold;">Alcheni</p></div>
-				<div><p style="font-weight: bold;">Alchini</p></div>
+				<div><p style="font-weight: bold;"><a href="Alcani.html" style="text-decoration: none;">Alcani</a></p></div>
+				<div><p style="font-weight: bold;"><a href="Alcheni.html" style="text-decoration: none;">Alcheni</a></p></div>
+				<div><p style="font-weight: bold;"><a href="Alchini.html" style="text-decoration: none;">Alchini</a></p></div>
 				<div><p>idrocarburi saturi con formula molecolare</p></div>
 				<div><p>idrocarburi insaturi costituiti da un doppio legame tra gli atomi di carbonio, con formula molecolare</p></div>
 				<div><p>idrocarburi insaturi costituiti da un triplo legame tra gli atomi di carbonio, con formula
@@ -81,8 +123,8 @@
 
 			<div class="ciclici">
 				<div  style="grid-column: 1 / 3;"><p><a href="AlifaticiCiclici.html" style="text-decoration: none;font-weight: bold;">CICLICI</a></p></div>
-				<div ><p style="font-weight: bold;">Cicloalcani</p></div>
-				<div ><p style="font-weight: bold;">Cicloalcheni</p></div>
+				<div ><p style="font-weight: bold;"><a href="Cicloalcani.html" style="text-decoration: none;">Cicloalcani</a></p></div>
+				<div ><p style="font-weight: bold;"><a href="Cicloalcheni.html" style="text-decoration: none;">Cicloalcheni</a></p></div>
 				<div ><p>idrocarburi saturi con formula molecolare</p></div>
 				<div ><p>idrocarburi insaturi costituiti da un doppio legame (C=C) con formula
 					molecolare</p></div>

@@ -8,3 +8,18 @@ function mouseOut() {
 function transizione() {
     document.getElementById("foglio").style.opacity = "100%";
 }
+
+// menu a destra //
+function mappadestra() {
+    var click = document.getElementById("robodestra");
+    if (click.style.gridTemplateRows === "53px 0px 25px"){
+        document.getElementById("robodestra").style.gridTemplateRows = "53px 540px 25px";
+        document.getElementById("schemolo").style.display = "block"; 
+        document.getElementById("freccetta").style.transform = "rotate(180deg)"; 
+    }
+    else {
+        document.getElementById("robodestra").style.gridTemplateRows = "53px 0px 25px";
+        document.getElementById("schemolo").style.display = "none";
+        document.getElementById("freccetta").style.transform = "rotate(0deg)";  
+    }
+}

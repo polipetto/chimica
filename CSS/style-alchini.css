@@ -23,9 +23,14 @@
 }
 
 #foglio {
-    margin-top: 0.5%;
-    transition: 1s;
-    opacity: 0%;
+  margin-top: 0.5%;
+  transition: 1s;
+  opacity: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #freccia {
@@ -35,29 +40,58 @@
     align-items: center;
   }
 
-.wow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  #wow {
+    width: 73%;
+  }
+
+/* robo a destra */ /* robo a destra */ /* robo a destra */
+.mappola{
+  float: right;
+  margin-top: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
+/* mappa idrocarburi */
+#robodestra {
+  display: grid;
+  grid-template-columns: 893.61px 66.39px;
+  grid-template-rows: 53px 0px 25px;
+}
+
+#schemolo {
+  border-radius: 10px 10px 10px 10px;
+  display: none;
+}
+
+#freccetto {
+  background-color: #333;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* fine */ /* fine */ /* fine */ /* fine */
+
 table {
-    width: 1400px;
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    border: 2.5px solid #333;
-    font-size: 20px;
-    box-shadow: 10px 10px black;
+  width: 73%;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  border: 2.5px solid #333;
+  font-size: 20px;
+  box-shadow: 10px 10px black;
 }
 
 .tabelline {
-    display: none;
-    width: 1350px;
-    padding: 25px;
-    box-shadow: none; 
-    background-color: black; 
-    color: white; 
-    border: none; 
+  display: none;
+  width: 70.3%;
+  padding: 25px;
+  box-shadow: none; 
+  background-color: black; 
+  color: white; 
+  border: none; 
 }
 
  /* barra quella in alto */

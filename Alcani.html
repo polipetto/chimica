@@ -38,9 +38,9 @@
                         <a onClick="mappadestra()"><img style="height: 50px;filter: invert(100%);" src="Immagini\mappa.png" ></a>
                     </div>              
                     <div id="schemolo" style="grid-row: 2 / 3;grid-column: 1 / 3;"> <!-- mappa invisibile-->
-                        <img src="Immagini\Immagine generale nera.png" usemap="#idrocarburi">
+                        <img style="border-radius: 0px 0px 0px 10px;" src="Immagini\Immagine generale nera.png" usemap="#idrocarburi">
                         <map name="idrocarburi">
-                            <area target="_self" alt="Idrocarburi" title="Idrocarburi" href="Idrocarburi.html" coords="409,34,674,62" shape="rect">
+                            <area target="_self" alt="Idrocarburi" title="Idrocarburi" href="index.html" coords="409,34,674,62" shape="rect">
                             <area target="_self" alt="Alifatici" title="Alifatici" href="Alifatici.html" coords="314,103,377,104,389,107,395,111,398,118,394,127,381,135,295,135,275,131,269,122,269,110,281,103" shape="poly">
                             <area target="_self" alt="Aromatici" title="Aromatici" href="Aromatici.html" coords="720,115,727,107,739,102,756,103,790,103,823,102,851,104,865,112,868,119,865,124,858,130,851,135,739,134,732,132,727,130,720,123" shape="poly">
                             <area target="_self" alt="Catena Aperta" title="Catena Aperta" href="AlfifaticiCatenaAperta.html" coords="44,155,215,154,224,155,226,163,225,179,224,185,48,187,40,181,40,159" shape="poly">
@@ -72,7 +72,7 @@
                         </a>
                     </div>
                 </div>
-            </li>
+            </li>     <!--fine mappa a destraaaaaaaa-->
 		</ul>
 
 	<div style="opacity: 0%;">
@@ -218,7 +218,7 @@
 					</p>
 				</td>     
 				<td>
-					<div style="display: flex; justify-content: center; align-items: center;filter: invert(100%);"><img src="Immagini\Alcani\nomenclatura.jpg" width="95%"> </div>				
+					<div id="zoom" style="display: flex; justify-content: center; align-items: center;filter: invert(100%);"><a onClick="zoom()"><img id="gigantifica" src="Immagini\Alcani\nomenclatura.jpg" width="95%"> </a></div>				
 				</td> 
 			</tr>
 		</table> 
@@ -328,11 +328,11 @@
 				</td>
 			</tr>
 			<tr>
-				<td>
+				<td width="40%">
 					<p>Sono reazioni di ossido-riduzione esotermiche che formano Anidride carbonica (CO2) e acqua (H2O)</p>
 				</td>
 				<td>
-					<img style="filter: invert(100%);" src="Immagini\Alcani\Cattura.PNG">
+					<img style="width:100%;filter: invert(100%);" src="Immagini\Alcani\Cattura.PNG">
 				</td>
 			</tr>
 			<tr>
@@ -351,7 +351,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td>
+				<td width="70%">
 					<p> Sono reazioni non spontane, avvengono grazie a dei <b>catalizzatori</b>,luce o calore, e portano alla formazione 
 					di un <b> alogenuro alchilico</b> e di un <b>acido alogenidrico</b>.
 					L'alogenazione avviene avviene in 3 fasi:
@@ -364,7 +364,7 @@
 					</p>
 				</td>
 				<td>
-					<img style="filter: invert(100%);" src="Immagini\Alcani\Cattura-2.PNG"> 
+					<img style="width:100%;filter: invert(100%);" src="Immagini\Alcani\Cattura-2.PNG"> 
 				</td>
 			</tr>
 
@@ -387,7 +387,7 @@
 				</td>
 			</tr>
 		</table>
-		
+	
 
 	</div>
 	<script>transizione()</script>

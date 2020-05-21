@@ -130,3 +130,14 @@ function mappadestra() {
         document.getElementById("freccetta").style.transform = "rotate(0deg)";  
     }
 }
+
+function zoom() {
+    if (document.getElementById("zoom").style.filter === "invert(100%)"){
+        document.getElementById("gigantifica").style.width = "800px";
+        document.getElementById("zoom").style.filter = "invert(0%)";       
+    }
+    else {
+        document.getElementById("gigantifica").style.width = "95%";
+        document.getElementById("zoom").style.filter = "invert(100%)";    
+    }
+}

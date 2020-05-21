@@ -22,6 +22,7 @@ body {
 }
 
 #barra {
+    z-index: 1;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -51,14 +52,19 @@ body {
     background-color: #111;
   }
 
-#foglio {
-    margin-top: 5%;
+  #foglio {
+    margin-top: 0.5%;
     transition: 1s;
-    opacity: 0%; 
+    opacity: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 table {
-    width: 1400px;
+    width: 73%;
     background-color: white;
     font-family: 'Roboto', sans-serif;
     border: 2.5px solid #333;
@@ -66,11 +72,48 @@ table {
     box-shadow: 10px 10px black;
 }
 
+#wow {
+  width: 73%;
+  margin-top: 2%;
+}
+
 #kawaii {
     display: flex;
     justify-content: center;
     align-items: center;
  }
+
+/* robo a destra */ /* robo a destra */ /* robo a destra */
+.mappola{
+  float: right;
+  margin-top: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* mappa idrocarburi */
+#robodestra {
+  display: grid;
+  grid-template-columns: 893.61px 66.39px;
+  grid-template-rows: 53px 0px 25px;
+}
+
+#schemolo {
+  border-radius: 10px 10px 10px 10px;
+  display: none;
+}
+
+#freccetto {
+  background-color: #333;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* fine */ /* fine */ /* fine */ /* fine */
 
  .container {
   background-color: #333;
@@ -102,6 +145,7 @@ table {
       /*inizio disastro*/
 
 .catena {
+z-index: 0;
 background-color: black;
 color: white;
 margin: 25px;
@@ -156,12 +200,13 @@ grid-template-rows: 0.5fr 0.5fr 1fr;
 }
 
 .menuone {
-  width: 1400px;
+  width: 73%;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
 
 .ciclici {
+z-index: 0;
 background-color: black;
 color: white;
 margin: 25px;

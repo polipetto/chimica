@@ -14,7 +14,7 @@ var yuppi = document.getElementById("logo")
 window.onscroll = function() {
     console.log("asshole") 
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("logo").style.width = "800px";
+        document.getElementById("logo").style.width = "41.6%";
         document.getElementById("wow").style.marginBottom = "0";
 		document.getElementById("foglio").style.opacity = "100%";
         document.getElementById("path-31-outside-1").style.fill = "white";
@@ -32,7 +32,7 @@ window.onscroll = function() {
         document.getElementById("verde6").style.fill = "#FD3C65";       
     } 
     else {
-        document.getElementById("logo").style.width = "1400px";
+        document.getElementById("logo").style.width = "73%";
         document.getElementById("wow").style.marginBottom = "20%";
 		document.getElementById("foglio").style.opacity = "0%";
         document.getElementById("path-31-outside-1").style.fill = "black";
