@@ -15,7 +15,7 @@ const scoreDiv = document.getElementById("scoreContainer");
 let questions = [
     {
         question : "Gli alcani sono:",
-        imgSrc : "img/alcani.png",
+        imgSrc : "Immagini/icona2.0.png",
         choiceA : "Idrocarburi aromatici",
         choiceB : "Idrocarburi alifatici",
         choiceC : "Idrocarburi",
@@ -76,6 +76,27 @@ let questions = [
         choiceB : "C2n+H2n",
         choiceC : "Cn+H2n-2",
         correct : "C"
+    },{
+        question : "La purina è un eterociclo composto da quanti anelli?",
+        imgSrc : "Immagini/icona2.0.png",
+        choiceA : "2",
+        choiceB : "3",
+        choiceC : "4",
+        correct : "A"
+    },{
+        question : "Che caratteristica hanno gli anelli degli areni policiclici condensati?",
+        imgSrc : "Immagini/icona2.0.png",
+        choiceA : "Sono costituiti da piu' anelli",
+        choiceB : "Sono sovrapposti",
+        choiceC : "Sono staccati",
+        correct : "A"
+    },{
+        question : "Quale dei tre e' planare?",
+        imgSrc : "Immagini/icona2.0.png",
+        choiceA : "Ciclobutene",
+        choiceB : "Cicloesene",
+        choiceC : "Cicloottene",
+        correct : "B"
     }
     
 ];
@@ -85,8 +106,8 @@ let questions = [
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
-const questionTime = 15; // 10s
-const gaugeWidth = 150; // 150px
+const questionTime = 15; 
+const gaugeWidth = 150; 
 const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
@@ -111,7 +132,7 @@ function startQuiz(){
     quiz.style.display = "block";
     renderProgress();
     renderCounter();
-    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
+    TIMER = setInterval(renderCounter,1000); // 1000 ticchetti sono 1s
 }
 
 // va avanti
@@ -121,7 +142,7 @@ function renderProgress(){
     }
 }
 
-// buono o cattivo
+// tempo passa
 
 function renderCounter(){
     if(count <= questionTime){
@@ -130,13 +151,13 @@ function renderCounter(){
         count++
     }else{
         count = 0;
-        // change progress color to red
+        // finisce tempo quindi va avanti
         answerIsWrong();
         if(runningQuestion < lastQuestion){
             runningQuestion++;
             renderQuestion();
         }else{
-            // end the quiz and show the score
+            // finto tutto mostra voto
             clearInterval(TIMER);
             scoreRender();
         }

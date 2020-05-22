@@ -1,0 +1,200 @@
+body::-webkit-scrollbar {
+    width: 0.5em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    background-color: #d6beeb;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #333;
+    
+  }
+
+body {
+    background-color:#d6beeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;    
+}
+
+ /* barra quella in alto */
+ #barra {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+    height: 53px;
+    z-index: 1;
+  }
+  
+  .celle {
+    float: left;
+  }
+  
+  .celle a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .celle a:hover {
+    background-color: #111;
+  }
+
+  .container {
+    background-color: #333;
+    box-shadow: 10px 10px  black;
+    overflow: visible;
+    width: 426.06px;
+    display: grid;
+                   grid-template-columns: 1fr 1fr 1fr;
+                   grid-template-rows: 1fr 1fr 1fr 1fr;
+                   grid-gap: 0;
+  }
+  
+  .bob a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .bob a:hover {
+    background-color: #111;
+  }
+  
+  #ez  {
+    display: none;
+  }
+
+  /* robo a destra */ /* robo a destra */ /* robo a destra */
+  .mappola{
+    float: right;
+    margin-top: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+  
+  /* mappa idrocarburi */
+  #robodestra {
+    display: grid;
+    grid-template-columns: 0 66.39px;
+    grid-template-rows: 53px 0px 25px;
+  }
+  
+  #schemolo {
+    border-radius: 10px 10px 10px 10px;
+    display: none;
+  }
+  
+  #freccetto {
+    background-color: #333;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* fine */ /* fine */ /* fine */ /* fine */
+
+  #wow {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #centramento {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #griglia {
+      height: 350px;
+      width: 50%;
+      display: grid;
+      grid-template-columns: 1fr 1.75fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 25px;
+  }
+
+  .imgcentrata {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .zoommifica:hover {
+    height: 3000x;
+    transition: 0.5s;
+  }
+
+  #sfondino {
+    grid-row: 1 / 6;
+    grid-column: 2 / 3;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    border: 2.5px solid #333;
+    font-size: 20px;
+    box-shadow: 10px 10px black;
+    padding: 25;
+  }
+
+  #nometti {
+      margin-top: 12.5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-gap: 15px;
+  }
+
+  /* Bubble Right */
+.bolla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #b581e3;
+    width: 1fr;
+    z-index: 0;
+}
+
+.bolla {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+.bolla:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    border-style: solid;
+    top: calc(50% - 10px);
+    right: 0;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #b581e3;
+    transform: translateX(10px);
+  }
