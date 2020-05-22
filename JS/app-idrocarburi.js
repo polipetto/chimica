@@ -11,8 +11,7 @@ function animazione() {
 }
 
 var yuppi = document.getElementById("logo")
-window.onscroll = function() {
-    console.log("asshole") 
+window.onscroll = function() { 
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("logo").style.width = "41.6%";
         document.getElementById("wow").style.marginBottom = "0";
@@ -28,8 +27,7 @@ window.onscroll = function() {
         document.getElementById("verde2").style.fill = "#FD3C65";
         document.getElementById("verde3").style.fill = "#FD3C65";
         document.getElementById("verde4").style.fill = "#FD3C65";
-        document.getElementById("verde5").style.fill = "#FD3C65";
-        document.getElementById("verde6").style.fill = "#FD3C65";       
+        document.getElementById("verde5").style.fill = "#FD3C65";       
     } 
     else {
         document.getElementById("logo").style.width = "73%";
@@ -47,7 +45,6 @@ window.onscroll = function() {
         document.getElementById("verde3").style.fill = "#00C999";
         document.getElementById("verde4").style.fill = "#00C999";
         document.getElementById("verde5").style.fill = "#00C999";
-        document.getElementById("verde6").style.fill = "#00C999";
     }
 }
 
@@ -65,11 +62,13 @@ function mappadestra() {
     if (click.style.gridTemplateRows === "53px 0px 25px"){
         document.getElementById("robodestra").style.gridTemplateRows = "53px 540px 25px";
         document.getElementById("schemolo").style.display = "block"; 
+        document.getElementById("robodestra").style.gridTemplateColumns = "893.61px 66.39px";
         document.getElementById("freccetta").style.transform = "rotate(180deg)"; 
     }
     else {
         document.getElementById("robodestra").style.gridTemplateRows = "53px 0px 25px";
         document.getElementById("schemolo").style.display = "none";
+        document.getElementById("robodestra").style.gridTemplateColumns = "0 66.39px";
         document.getElementById("freccetta").style.transform = "rotate(0deg)";  
     }
 }

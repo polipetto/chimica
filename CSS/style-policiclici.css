@@ -100,7 +100,7 @@ table {
 /* mappa idrocarburi */
 #robodestra {
   display: grid;
-  grid-template-columns: 893.61px 66.39px;
+  grid-template-columns: 0 66.39px;
   grid-template-rows: 53px 0px 25px;
 }
 
