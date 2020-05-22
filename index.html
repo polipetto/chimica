@@ -12,9 +12,9 @@
     <body >
     
         <ul id="barra">
-            <li class="celle"><a href=""><img style="width: 20px;align-self: center;" src="Immagini\icona.png"></a></li>
-            <li class="celle"><a href="">Crediti</a></li>
-            <li class="celle" style="width: 128.69px;overflow: visible;"><a onmouseover="mouseOver()" onmouseout="mouseOut()" href="">Naviga</a>
+            <li class="celle"><a href=""><img style="width: 20px;align-self: center;z-index: 3;" src="Immagini\icona.png"></a></li>
+            <li class="celle"><a href="Crediti.html">Crediti</a></li>
+            <li class="celle" style="width: 128.69px;overflow: visible;z-index: 3;"><a style="z-index: 3;" onmouseover="mouseOver()" onmouseout="mouseOut()" href="">Naviga</a>
                 <div id="ez" onmouseover="mouseOver()" onmouseout="mouseOut()">
                 <div class="container" >
                     <div class="bob"><a href="Alcani.html">Alcani</a></div>
@@ -26,22 +26,25 @@
                     <div class="bob"><a href="Aromatici.html">Aromatici</a></div>
                     <div class="bob"><a href="Cicloalcani.html">Cicloalcani</a></div>
                     <div class="bob"><a href="Cicloalcheni.html">Cicloalcheni</a></div>
-                    <div class="bob"><a href="Idrocarburi.html">Idrocarburi</a></div>
+                    <div class="bob"><a href="index.html">Idrocarburi</a></div>
                     <div class="bob"><a href="Policiclici.html">Policiclici</a></div>
                     <div class="bob"><a href="SerieBenzenica.html">Serie Benzenica</a></div>
                 </div>
                 </div>
             </li>
-            <li class="celle"><a href="">Esercizi</a></li>
+            <li class="celle"><a href="Esercizi.html">Esercizi</a></li>
             <li class="mappola">          <!--mappa a destraaaaaaa-->
                 <div id="robodestra">
+                    <div style="z-index: -5;;grid-row: 1 / 2;grid-column: 1 / 2;width: 100%;">
+
+                    </div>
                     <div style="grid-row: 1 / 2;grid-column: 2 / 3;">
                         <a onClick="mappadestra()"><img style="height: 50px;filter: invert(100%);" src="Immagini\mappa.png" ></a>
                     </div>              
                     <div id="schemolo" style="grid-row: 2 / 3;grid-column: 1 / 3;"> <!-- mappa invisibile-->
                         <img style="border-radius: 0px 0px 0px 10px;" src="Immagini\Immagine generale nera.png" usemap="#idrocarburi">
                         <map name="idrocarburi">
-                            <area target="_self" alt="Idrocarburi" title="Idrocarburi" href="Idrocarburi.html" coords="409,34,674,62" shape="rect">
+                            <area target="_self" alt="Idrocarburi" title="Idrocarburi" href="index.html" coords="409,34,674,62" shape="rect">
                             <area target="_self" alt="Alifatici" title="Alifatici" href="Alifatici.html" coords="314,103,377,104,389,107,395,111,398,118,394,127,381,135,295,135,275,131,269,122,269,110,281,103" shape="poly">
                             <area target="_self" alt="Aromatici" title="Aromatici" href="Aromatici.html" coords="720,115,727,107,739,102,756,103,790,103,823,102,851,104,865,112,868,119,865,124,858,130,851,135,739,134,732,132,727,130,720,123" shape="poly">
                             <area target="_self" alt="Catena Aperta" title="Catena Aperta" href="AlfifaticiCatenaAperta.html" coords="44,155,215,154,224,155,226,163,225,179,224,185,48,187,40,181,40,159" shape="poly">

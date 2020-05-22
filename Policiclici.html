@@ -2,12 +2,125 @@
 
 	<head> 
 		<title> Policiclici </title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="CSS\style-policiclici.css">
+		<script type="text/javascript" src="JS\app-policiclici.js"></script>
+		<link rel="icon" href="Immagini\icona.png" type="image/png" />
 	</head>
 	
 	<body> 
-		<h1 align="center"><strong>AROMATICI POLICLICI</STRONG></h1>
-	<hr>
-	<table>
+
+		<ul id="barra">
+            <li class="celle"><a href=""><img style="width: 20px;align-self: center;" src="Immagini\icona.png"></a></li>
+            <li class="celle"><a href="Crediti.html">Crediti</a></li>
+            <li class="celle" style="width: 128.69px;overflow: visible;"><a onmouseover="mouseOver()" onmouseout="mouseOut()" href="">Naviga</a>
+                <div id="ez" onmouseover="mouseOver()" onmouseout="mouseOut()">
+                <div class="container" >
+                    <div class="bob"><a href="Alcani.html">Alcani</a></div>
+                    <div class="bob"><a href="Alcheni.html">Alcheni</a></div>
+                    <div class="bob"><a href="Alchini.html">Alchini</a></div>
+                    <div class="bob"><a href="AlfifaticiCatenaAperta.html">Catena Aperta</a></div>
+                    <div class="bob"><a href="Alifatici.html">Alifatici</a></div>
+                    <div class="bob"><a href="AlifaticiCiclici.html">Ciclici</a></div>
+                    <div class="bob"><a href="Aromatici.html">Aromatici</a></div>
+                    <div class="bob"><a href="Cicloalcani.html">Cicloalcani</a></div>
+                    <div class="bob"><a href="Cicloalcheni.html">Cicloalcheni</a></div>
+                    <div class="bob"><a href="index.html">Idrocarburi</a></div>
+                    <div class="bob"><a href="Policiclici.html">Policiclici</a></div>
+                    <div class="bob"><a href="SerieBenzenica.html">Serie Benzenica</a></div>
+                </div>
+                </div>
+            </li>
+			<li class="celle"><a href="Esercizi.html">Esercizi</a></li>
+			<li class="mappola">          <!--mappa a destraaaaaaa-->
+                <div id="robodestra">
+                    <div style="grid-row: 1 / 2;grid-column: 2 / 3;">
+                        <a onClick="mappadestra()"><img style="height: 50px;filter: invert(100%);" src="Immagini\mappa.png" ></a>
+                    </div>              
+                    <div id="schemolo" style="grid-row: 2 / 3;grid-column: 1 / 3;"> <!-- mappa invisibile-->
+                        <img style="border-radius: 0px 0px 0px 10px;" src="Immagini\Immagine generale nera.png" usemap="#idrocarburi">
+                        <map name="idrocarburi">
+                            <area target="_self" alt="Idrocarburi" title="Idrocarburi" href="index.html" coords="409,34,674,62" shape="rect">
+                            <area target="_self" alt="Alifatici" title="Alifatici" href="Alifatici.html" coords="314,103,377,104,389,107,395,111,398,118,394,127,381,135,295,135,275,131,269,122,269,110,281,103" shape="poly">
+                            <area target="_self" alt="Aromatici" title="Aromatici" href="Aromatici.html" coords="720,115,727,107,739,102,756,103,790,103,823,102,851,104,865,112,868,119,865,124,858,130,851,135,739,134,732,132,727,130,720,123" shape="poly">
+                            <area target="_self" alt="Catena Aperta" title="Catena Aperta" href="AlfifaticiCatenaAperta.html" coords="44,155,215,154,224,155,226,163,225,179,224,185,48,187,40,181,40,159" shape="poly">
+                            <area target="_self" alt="Ciclici" title="Ciclici" href="AlifaticiCiclici.html" coords="499,156,534,155,591,155,596,162,595,170,595,180,592,189,528,187,493,188,485,186,482,160,488,156" shape="poly">
+                            <area target="_self" alt="Policiclici" title="Policiclici" href="Policiclici.html" coords="677,155,769,156,780,155,784,163,784,181,781,189,674,187,665,186,662,178,663,157" shape="poly">
+                            <area target="_self" alt="Serie Benzenica" title="Serie Benzenica" href="SerieBenzenica.html" coords="835,156,937,155,946,156,950,163,950,183,946,189,938,191,833,191,826,190,821,183,820,170,821,160,828,153" shape="poly">
+                            <area target="_self" alt="Alcani" title="Alcani" href="Alcani.html" coords="11,307,117,308,118,343,11,344" shape="poly">
+                            <area target="_self" alt="Alcheni" title="Alcheni" href="Alcheni.html" coords="132,308,239,308,239,344,132,342" shape="poly">
+                            <area target="_self" alt="Alchini" title="Alchini" href="Alchini.html" coords="248,308,354,307,353,342,248,344" shape="poly">
+                            <area target="_self" alt="Cicloalcani" title="Cicloalcani" href="Cicloalcani.html" coords="379,308,504,310,507,343,382,344" shape="poly">
+                            <area target="_self" alt="Cicloalcheni" title="Cicloalcheni" href="Cicloalcheni.html" coords="549,308,680,308,681,344,548,341" shape="poly">
+                        </map>
+                    </div>
+                    <div id="freccetto" style="grid-row: 3 / 4;grid-column: 2 / 3;"> <!--freccetto-->
+                        <a onClick="mappadestra()">
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                        <svg id="freccetta" style="transition: 0.5s;" width="30% "version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 491.996 491.996" style="enable-background:new 0 0 491.996 491.996;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848
+                                    L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128
+                                    c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084
+                                    c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224
+                                    C491.996,136.902,489.204,130.046,484.132,124.986z"/>
+                            </g>		</g>		<g>			</g>		<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>					<g>					</g>
+                        </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>     <!--fine mappa a destraaaaaaaa-->
+		</ul>
+
+	<div id="foglio">
+		
+		<div id="wow">
+		<svg height="37.33" viewBox="0 0 190 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0" y="0" width="190" height="28" fill="black">
+			<rect fill="white" width="190" height="28"/>
+			<path d="M17.2986 8.76718C17.2986 10.8822 16.5991 12.6447 15.2001 14.0547C13.8244 15.4404 11.7142 16.1332 8.8695 16.1332H4.18278V26.7447H1V1.32819H8.8695C11.6209 1.32819 13.7078 2.02104 15.1301 3.40673C16.5758 4.79243 17.2986 6.57924 17.2986 8.76718ZM8.8695 13.3983C10.6416 13.3983 11.9474 12.9972 12.7868 12.195C13.6262 11.3927 14.0459 10.2501 14.0459 8.76718C14.0459 5.63114 12.3204 4.06311 8.8695 4.06311H4.18278V13.3983H8.8695Z"/>
+			<path d="M32.3067 27C30.0449 27 27.9814 26.453 26.116 25.359C24.2507 24.2408 22.77 22.6971 21.6741 20.7279C20.6015 18.7345 20.0652 16.4979 20.0652 14.0182C20.0652 11.5386 20.6015 9.31417 21.6741 7.34502C22.77 5.35157 24.2507 3.80785 26.116 2.71388C27.9814 1.5956 30.0449 1.03646 32.3067 1.03646C34.5918 1.03646 36.667 1.5956 38.5323 2.71388C40.3977 3.80785 41.8667 5.33941 42.9393 7.30855C44.0119 9.2777 44.5481 11.5143 44.5481 14.0182C44.5481 16.5222 44.0119 18.7588 42.9393 20.7279C41.8667 22.6971 40.3977 24.2408 38.5323 25.359C36.667 26.453 34.5918 27 32.3067 27ZM32.3067 24.1192C34.0088 24.1192 35.5361 23.7059 36.8885 22.8794C38.2642 22.0528 39.3368 20.8738 40.1062 19.3422C40.899 17.8107 41.2954 16.036 41.2954 14.0182C41.2954 11.9762 40.899 10.2015 40.1062 8.69425C39.3368 7.16269 38.2759 5.98364 36.9235 5.15708C35.5711 4.33053 34.0322 3.91725 32.3067 3.91725C30.5812 3.91725 29.0423 4.33053 27.6899 5.15708C26.3375 5.98364 25.2649 7.16269 24.4722 8.69425C23.7027 10.2015 23.318 11.9762 23.318 14.0182C23.318 16.036 23.7027 17.8107 24.4722 19.3422C25.2649 20.8738 26.3375 22.0528 27.6899 22.8794C29.0656 23.7059 30.6045 24.1192 32.3067 24.1192Z"/>
+			<path d="M51.9326 24.0463H60.4667V26.7447H48.7499V1.32819H51.9326V24.0463Z"/>
+			<path d="M67.0295 1.32819V26.7447H63.8467V1.32819H67.0295Z"/>
+			<path d="M71.2648 14.0182C71.2648 11.5386 71.8011 9.31417 72.8737 7.34502C73.9463 5.35157 75.4036 3.7957 77.2457 2.67742C79.111 1.55914 81.1746 1 83.4363 1C86.0945 1 88.4145 1.66854 90.3965 3.00561C92.3784 4.34268 93.8241 6.2389 94.7335 8.69425H90.9211C90.2449 7.16269 89.2656 5.98364 87.9832 5.15708C86.724 4.33053 85.2084 3.91725 83.4363 3.91725C81.7342 3.91725 80.2069 4.33053 78.8545 5.15708C77.5022 5.98364 76.4412 7.16269 75.6718 8.69425C74.9023 10.2015 74.5176 11.9762 74.5176 14.0182C74.5176 16.036 74.9023 17.8107 75.6718 19.3422C76.4412 20.8495 77.5022 22.0164 78.8545 22.8429C80.2069 23.6695 81.7342 24.0827 83.4363 24.0827C85.2084 24.0827 86.724 23.6816 87.9832 22.8794C89.2656 22.0528 90.2449 20.8738 90.9211 19.3422H94.7335C93.8241 21.7733 92.3784 23.6573 90.3965 24.9944C88.4145 26.3072 86.0945 26.9635 83.4363 26.9635C81.1746 26.9635 79.111 26.4166 77.2457 25.3226C75.4036 24.2043 73.9463 22.6606 72.8737 20.6914C71.8011 18.7223 71.2648 16.4979 71.2648 14.0182Z"/>
+			<path d="M102.654 1.32819V26.7447H99.4713V1.32819H102.654Z"/>
+			<path d="M106.889 14.0182C106.889 11.5386 107.426 9.31417 108.498 7.34502C109.571 5.35157 111.028 3.7957 112.87 2.67742C114.736 1.55914 116.799 1 119.061 1C121.719 1 124.039 1.66854 126.021 3.00561C128.003 4.34268 129.449 6.2389 130.358 8.69425H126.546C125.869 7.16269 124.89 5.98364 123.608 5.15708C122.349 4.33053 120.833 3.91725 119.061 3.91725C117.359 3.91725 115.831 4.33053 114.479 5.15708C113.127 5.98364 112.066 7.16269 111.296 8.69425C110.527 10.2015 110.142 11.9762 110.142 14.0182C110.142 16.036 110.527 17.8107 111.296 19.3422C112.066 20.8495 113.127 22.0164 114.479 22.8429C115.831 23.6695 117.359 24.0827 119.061 24.0827C120.833 24.0827 122.349 23.6816 123.608 22.8794C124.89 22.0528 125.869 20.8738 126.546 19.3422H130.358C129.449 21.7733 128.003 23.6573 126.021 24.9944C124.039 26.3072 121.719 26.9635 119.061 26.9635C116.799 26.9635 114.736 26.4166 112.87 25.3226C111.028 24.2043 109.571 22.6606 108.498 20.6914C107.426 18.7223 106.889 16.4979 106.889 14.0182Z"/>
+			<path d="M138.279 24.0463H146.813V26.7447H135.096V1.32819H138.279V24.0463Z"/>
+			<path d="M153.375 1.32819V26.7447H150.193V1.32819H153.375Z"/>
+			<path d="M157.611 14.0182C157.611 11.5386 158.147 9.31417 159.22 7.34502C160.292 5.35157 161.75 3.7957 163.592 2.67742C165.457 1.55914 167.521 1 169.782 1C172.44 1 174.76 1.66854 176.742 3.00561C178.724 4.34268 180.17 6.2389 181.079 8.69425H177.267C176.591 7.16269 175.612 5.98364 174.329 5.15708C173.07 4.33053 171.554 3.91725 169.782 3.91725C168.08 3.91725 166.553 4.33053 165.2 5.15708C163.848 5.98364 162.787 7.16269 162.018 8.69425C161.248 10.2015 160.864 11.9762 160.864 14.0182C160.864 16.036 161.248 17.8107 162.018 19.3422C162.787 20.8495 163.848 22.0164 165.2 22.8429C166.553 23.6695 168.08 24.0827 169.782 24.0827C171.554 24.0827 173.07 23.6816 174.329 22.8794C175.612 22.0528 176.591 20.8738 177.267 19.3422H181.079C180.17 21.7733 178.724 23.6573 176.742 24.9944C174.76 26.3072 172.44 26.9635 169.782 26.9635C167.521 26.9635 165.457 26.4166 163.592 25.3226C161.75 24.2043 160.292 22.6606 159.22 20.6914C158.147 18.7223 157.611 16.4979 157.611 14.0182Z"/>
+			<path d="M189 1.32819V26.7447H185.817V1.32819H189Z"/>
+			</mask>
+			<path d="M17.2986 8.76718C17.2986 10.8822 16.5991 12.6447 15.2001 14.0547C13.8244 15.4404 11.7142 16.1332 8.8695 16.1332H4.18278V26.7447H1V1.32819H8.8695C11.6209 1.32819 13.7078 2.02104 15.1301 3.40673C16.5758 4.79243 17.2986 6.57924 17.2986 8.76718ZM8.8695 13.3983C10.6416 13.3983 11.9474 12.9972 12.7868 12.195C13.6262 11.3927 14.0459 10.2501 14.0459 8.76718C14.0459 5.63114 12.3204 4.06311 8.8695 4.06311H4.18278V13.3983H8.8695Z" fill="black"/>
+			<path d="M32.3067 27C30.0449 27 27.9814 26.453 26.116 25.359C24.2507 24.2408 22.77 22.6971 21.6741 20.7279C20.6015 18.7345 20.0652 16.4979 20.0652 14.0182C20.0652 11.5386 20.6015 9.31417 21.6741 7.34502C22.77 5.35157 24.2507 3.80785 26.116 2.71388C27.9814 1.5956 30.0449 1.03646 32.3067 1.03646C34.5918 1.03646 36.667 1.5956 38.5323 2.71388C40.3977 3.80785 41.8667 5.33941 42.9393 7.30855C44.0119 9.2777 44.5481 11.5143 44.5481 14.0182C44.5481 16.5222 44.0119 18.7588 42.9393 20.7279C41.8667 22.6971 40.3977 24.2408 38.5323 25.359C36.667 26.453 34.5918 27 32.3067 27ZM32.3067 24.1192C34.0088 24.1192 35.5361 23.7059 36.8885 22.8794C38.2642 22.0528 39.3368 20.8738 40.1062 19.3422C40.899 17.8107 41.2954 16.036 41.2954 14.0182C41.2954 11.9762 40.899 10.2015 40.1062 8.69425C39.3368 7.16269 38.2759 5.98364 36.9235 5.15708C35.5711 4.33053 34.0322 3.91725 32.3067 3.91725C30.5812 3.91725 29.0423 4.33053 27.6899 5.15708C26.3375 5.98364 25.2649 7.16269 24.4722 8.69425C23.7027 10.2015 23.318 11.9762 23.318 14.0182C23.318 16.036 23.7027 17.8107 24.4722 19.3422C25.2649 20.8738 26.3375 22.0528 27.6899 22.8794C29.0656 23.7059 30.6045 24.1192 32.3067 24.1192Z" fill="black"/>
+			<path d="M51.9326 24.0463H60.4667V26.7447H48.7499V1.32819H51.9326V24.0463Z" fill="black"/>
+			<path d="M67.0295 1.32819V26.7447H63.8467V1.32819H67.0295Z" fill="black"/>
+			<path d="M71.2648 14.0182C71.2648 11.5386 71.8011 9.31417 72.8737 7.34502C73.9463 5.35157 75.4036 3.7957 77.2457 2.67742C79.111 1.55914 81.1746 1 83.4363 1C86.0945 1 88.4145 1.66854 90.3965 3.00561C92.3784 4.34268 93.8241 6.2389 94.7335 8.69425H90.9211C90.2449 7.16269 89.2656 5.98364 87.9832 5.15708C86.724 4.33053 85.2084 3.91725 83.4363 3.91725C81.7342 3.91725 80.2069 4.33053 78.8545 5.15708C77.5022 5.98364 76.4412 7.16269 75.6718 8.69425C74.9023 10.2015 74.5176 11.9762 74.5176 14.0182C74.5176 16.036 74.9023 17.8107 75.6718 19.3422C76.4412 20.8495 77.5022 22.0164 78.8545 22.8429C80.2069 23.6695 81.7342 24.0827 83.4363 24.0827C85.2084 24.0827 86.724 23.6816 87.9832 22.8794C89.2656 22.0528 90.2449 20.8738 90.9211 19.3422H94.7335C93.8241 21.7733 92.3784 23.6573 90.3965 24.9944C88.4145 26.3072 86.0945 26.9635 83.4363 26.9635C81.1746 26.9635 79.111 26.4166 77.2457 25.3226C75.4036 24.2043 73.9463 22.6606 72.8737 20.6914C71.8011 18.7223 71.2648 16.4979 71.2648 14.0182Z" fill="black"/>
+			<path d="M102.654 1.32819V26.7447H99.4713V1.32819H102.654Z" fill="black"/>
+			<path d="M106.889 14.0182C106.889 11.5386 107.426 9.31417 108.498 7.34502C109.571 5.35157 111.028 3.7957 112.87 2.67742C114.736 1.55914 116.799 1 119.061 1C121.719 1 124.039 1.66854 126.021 3.00561C128.003 4.34268 129.449 6.2389 130.358 8.69425H126.546C125.869 7.16269 124.89 5.98364 123.608 5.15708C122.349 4.33053 120.833 3.91725 119.061 3.91725C117.359 3.91725 115.831 4.33053 114.479 5.15708C113.127 5.98364 112.066 7.16269 111.296 8.69425C110.527 10.2015 110.142 11.9762 110.142 14.0182C110.142 16.036 110.527 17.8107 111.296 19.3422C112.066 20.8495 113.127 22.0164 114.479 22.8429C115.831 23.6695 117.359 24.0827 119.061 24.0827C120.833 24.0827 122.349 23.6816 123.608 22.8794C124.89 22.0528 125.869 20.8738 126.546 19.3422H130.358C129.449 21.7733 128.003 23.6573 126.021 24.9944C124.039 26.3072 121.719 26.9635 119.061 26.9635C116.799 26.9635 114.736 26.4166 112.87 25.3226C111.028 24.2043 109.571 22.6606 108.498 20.6914C107.426 18.7223 106.889 16.4979 106.889 14.0182Z" fill="black"/>
+			<path d="M138.279 24.0463H146.813V26.7447H135.096V1.32819H138.279V24.0463Z" fill="black"/>
+			<path d="M153.375 1.32819V26.7447H150.193V1.32819H153.375Z" fill="black"/>
+			<path d="M157.611 14.0182C157.611 11.5386 158.147 9.31417 159.22 7.34502C160.292 5.35157 161.75 3.7957 163.592 2.67742C165.457 1.55914 167.521 1 169.782 1C172.44 1 174.76 1.66854 176.742 3.00561C178.724 4.34268 180.17 6.2389 181.079 8.69425H177.267C176.591 7.16269 175.612 5.98364 174.329 5.15708C173.07 4.33053 171.554 3.91725 169.782 3.91725C168.08 3.91725 166.553 4.33053 165.2 5.15708C163.848 5.98364 162.787 7.16269 162.018 8.69425C161.248 10.2015 160.864 11.9762 160.864 14.0182C160.864 16.036 161.248 17.8107 162.018 19.3422C162.787 20.8495 163.848 22.0164 165.2 22.8429C166.553 23.6695 168.08 24.0827 169.782 24.0827C171.554 24.0827 173.07 23.6816 174.329 22.8794C175.612 22.0528 176.591 20.8738 177.267 19.3422H181.079C180.17 21.7733 178.724 23.6573 176.742 24.9944C174.76 26.3072 172.44 26.9635 169.782 26.9635C167.521 26.9635 165.457 26.4166 163.592 25.3226C161.75 24.2043 160.292 22.6606 159.22 20.6914C158.147 18.7223 157.611 16.4979 157.611 14.0182Z" fill="black"/>
+			<path d="M189 1.32819V26.7447H185.817V1.32819H189Z" fill="black"/>
+			<path d="M17.2986 8.76718C17.2986 10.8822 16.5991 12.6447 15.2001 14.0547C13.8244 15.4404 11.7142 16.1332 8.8695 16.1332H4.18278V26.7447H1V1.32819H8.8695C11.6209 1.32819 13.7078 2.02104 15.1301 3.40673C16.5758 4.79243 17.2986 6.57924 17.2986 8.76718ZM8.8695 13.3983C10.6416 13.3983 11.9474 12.9972 12.7868 12.195C13.6262 11.3927 14.0459 10.2501 14.0459 8.76718C14.0459 5.63114 12.3204 4.06311 8.8695 4.06311H4.18278V13.3983H8.8695Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1)"/>
+			<path d="M32.3067 27C30.0449 27 27.9814 26.453 26.116 25.359C24.2507 24.2408 22.77 22.6971 21.6741 20.7279C20.6015 18.7345 20.0652 16.4979 20.0652 14.0182C20.0652 11.5386 20.6015 9.31417 21.6741 7.34502C22.77 5.35157 24.2507 3.80785 26.116 2.71388C27.9814 1.5956 30.0449 1.03646 32.3067 1.03646C34.5918 1.03646 36.667 1.5956 38.5323 2.71388C40.3977 3.80785 41.8667 5.33941 42.9393 7.30855C44.0119 9.2777 44.5481 11.5143 44.5481 14.0182C44.5481 16.5222 44.0119 18.7588 42.9393 20.7279C41.8667 22.6971 40.3977 24.2408 38.5323 25.359C36.667 26.453 34.5918 27 32.3067 27ZM32.3067 24.1192C34.0088 24.1192 35.5361 23.7059 36.8885 22.8794C38.2642 22.0528 39.3368 20.8738 40.1062 19.3422C40.899 17.8107 41.2954 16.036 41.2954 14.0182C41.2954 11.9762 40.899 10.2015 40.1062 8.69425C39.3368 7.16269 38.2759 5.98364 36.9235 5.15708C35.5711 4.33053 34.0322 3.91725 32.3067 3.91725C30.5812 3.91725 29.0423 4.33053 27.6899 5.15708C26.3375 5.98364 25.2649 7.16269 24.4722 8.69425C23.7027 10.2015 23.318 11.9762 23.318 14.0182C23.318 16.036 23.7027 17.8107 24.4722 19.3422C25.2649 20.8738 26.3375 22.0528 27.6899 22.8794C29.0656 23.7059 30.6045 24.1192 32.3067 24.1192Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1)"/>
+			<path d="M51.9326 24.0463H60.4667V26.7447H48.7499V1.32819H51.9326V24.0463Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1)"/>
+			<path d="M67.0295 1.32819V26.7447H63.8467V1.32819H67.0295Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1)"/>
+			<path d="M71.2648 14.0182C71.2648 11.5386 71.8011 9.31417 72.8737 7.34502C73.9463 5.35157 75.4036 3.7957 77.2457 2.67742C79.111 1.55914 81.1746 1 83.4363 1C86.0945 1 88.4145 1.66854 90.3965 3.00561C92.3784 4.34268 93.8241 6.2389 94.7335 8.69425H90.9211C90.2449 7.16269 89.2656 5.98364 87.9832 5.15708C86.724 4.33053 85.2084 3.91725 83.4363 3.91725C81.7342 3.91725 80.2069 4.33053 78.8545 5.15708C77.5022 5.98364 76.4412 7.16269 75.6718 8.69425C74.9023 10.2015 74.5176 11.9762 74.5176 14.0182C74.5176 16.036 74.9023 17.8107 75.6718 19.3422C76.4412 20.8495 77.5022 22.0164 78.8545 22.8429C80.2069 23.6695 81.7342 24.0827 83.4363 24.0827C85.2084 24.0827 86.724 23.6816 87.9832 22.8794C89.2656 22.0528 90.2449 20.8738 90.9211 19.3422H94.7335C93.8241 21.7733 92.3784 23.6573 90.3965 24.9944C88.4145 26.3072 86.0945 26.9635 83.4363 26.9635C81.1746 26.9635 79.111 26.4166 77.2457 25.3226C75.4036 24.2043 73.9463 22.6606 72.8737 20.6914C71.8011 18.7223 71.2648 16.4979 71.2648 14.0182Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1)"/>
+			<path d="M102.654 1.32819V26.7447H99.4713V1.32819H102.654Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1)"/>
+			<path d="M106.889 14.0182C106.889 11.5386 107.426 9.31417 108.498 7.34502C109.571 5.35157 111.028 3.7957 112.87 2.67742C114.736 1.55914 116.799 1 119.061 1C121.719 1 124.039 1.66854 126.021 3.00561C128.003 4.34268 129.449 6.2389 130.358 8.69425H126.546C125.869 7.16269 124.89 5.98364 123.608 5.15708C122.349 4.33053 120.833 3.91725 119.061 3.91725C117.359 3.91725 115.831 4.33053 114.479 5.15708C113.127 5.98364 112.066 7.16269 111.296 8.69425C110.527 10.2015 110.142 11.9762 110.142 14.0182C110.142 16.036 110.527 17.8107 111.296 19.3422C112.066 20.8495 113.127 22.0164 114.479 22.8429C115.831 23.6695 117.359 24.0827 119.061 24.0827C120.833 24.0827 122.349 23.6816 123.608 22.8794C124.89 22.0528 125.869 20.8738 126.546 19.3422H130.358C129.449 21.7733 128.003 23.6573 126.021 24.9944C124.039 26.3072 121.719 26.9635 119.061 26.9635C116.799 26.9635 114.736 26.4166 112.87 25.3226C111.028 24.2043 109.571 22.6606 108.498 20.6914C107.426 18.7223 106.889 16.4979 106.889 14.0182Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1)"/>
+			<path d="M138.279 24.0463H146.813V26.7447H135.096V1.32819H138.279V24.0463Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1)"/>
+			<path d="M153.375 1.32819V26.7447H150.193V1.32819H153.375Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1)"/>
+			<path d="M157.611 14.0182C157.611 11.5386 158.147 9.31417 159.22 7.34502C160.292 5.35157 161.75 3.7957 163.592 2.67742C165.457 1.55914 167.521 1 169.782 1C172.44 1 174.76 1.66854 176.742 3.00561C178.724 4.34268 180.17 6.2389 181.079 8.69425H177.267C176.591 7.16269 175.612 5.98364 174.329 5.15708C173.07 4.33053 171.554 3.91725 169.782 3.91725C168.08 3.91725 166.553 4.33053 165.2 5.15708C163.848 5.98364 162.787 7.16269 162.018 8.69425C161.248 10.2015 160.864 11.9762 160.864 14.0182C160.864 16.036 161.248 17.8107 162.018 19.3422C162.787 20.8495 163.848 22.0164 165.2 22.8429C166.553 23.6695 168.08 24.0827 169.782 24.0827C171.554 24.0827 173.07 23.6816 174.329 22.8794C175.612 22.0528 176.591 20.8738 177.267 19.3422H181.079C180.17 21.7733 178.724 23.6573 176.742 24.9944C174.76 26.3072 172.44 26.9635 169.782 26.9635C167.521 26.9635 165.457 26.4166 163.592 25.3226C161.75 24.2043 160.292 22.6606 159.22 20.6914C158.147 18.7223 157.611 16.4979 157.611 14.0182Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1)"/>
+			<path d="M189 1.32819V26.7447H185.817V1.32819H189Z" stroke="black" stroke-width="2" mask="url(#path-1-outside-1)"/>
+			</svg>
+		</div>	
+
+		
+	
+	<table cellpadding="25" >		<!--principale-->
 		<tr>
 			<td>
 				<p>Gli idrocarburi policiclici aromatici, noti anche con l'acronimo
@@ -28,256 +141,459 @@
 				tra le molecole ipoteticamente candidate a fungere da stampo base per la
 				catalisi di reazioni coinvolte nella genesi delle prime forme di vita.</p>
 			</td> 
-			<td valign="top" width="20%" height="20%">
-				<img width="100%" src="Immagini\Policiclici\StrutturaIdrocarburo.png">
+			<td width="20%">
+				<div class="immgcentro">
+					<img width="100%" src="Immagini\Policiclici\StrutturaIdrocarburo.png">
+				</div>
+				
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<div class="menu-flex">
+					<div class="menu-inf">
+						<div class="menu-saltello" style="grid-column: 1 / 3;"><h3><a onClick="str()">Struttura</a></h3></div>
+						<div class="menu-saltello"><h3><a onClick="pos()">Posizione</a></h3></div>	
+						<div class="menu-saltello"><h3><a onClick="pro()">Propietà fisiche</a></h3></div>
+					</div>
+				</div>
 			</td>
 		</tr>
 	</table>
 	
-	<hr>
+	<br>
+
+		<a onClick="momenta()">
+			<div id="freccia">	
+				<svg width="75px "version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					viewBox="0 0 491.996 491.996" style="enable-background:new 0 0 491.996 491.996;" xml:space="preserve">
+					<g>
+						<g>
+							<path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848
+								L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128
+								c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084
+								c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224
+								C491.996,136.902,489.204,130.046,484.132,124.986z"/>
+						</g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+			   </svg>
+			</div>	
+			</a>
 	
-	<h3 align="center">STRUTTURA</h3>
 	
-	<table align="center" width="75%">
 	
-	<tr>
-		<td>
-			<p> Le molecole degli IPA sono generalmente planari
-			a meno di impedimenti sterici e sono costituite da un gruppo di atomi di 
-			carbonio ibridati sp2 legati tra loro in anelli condensati, che hanno in 
-			comune almeno due atomi di carbonio adiacenti, ciascuno con il proprio orbitale
-			pz occupato da un elettrone spaiato.
-			Tali orbitali pz vanno a formare un sistema aromatico in cui vengono
-			condivisi 4n+2 elettroni, non disposti a formare doppi legami definiti,
-			bensì delocalizzati sull'intera parte della molecola interessata dal fenomeno.
-			Gli idrocarburi policiclici più conosciuti sono:		</p>
-		</td>
-		<td> 
-			<img width="100%" src="Immagini\Policiclici\Benzopireni.png">
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<p> Gli areni policiclici concatenati costituiti da due
-			o più anelli benzenici uniti da un legame semplice carbonio-carbonio; il più
-			comune è il difenile </p></td>
-			</p></td><td> <img width="200" src="Immagini\Policiclici\Difenile.JPG">
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<p> Gli areni policiclici condensati costituiti da due o 
-			più anelli benzenici e ogni coppia di anelli ha due atomi di carbonio
-			in comune. I più comuni sono:</p></td> <td><img width="200" src="Immagini\Policiclici\Aromatici_Condensati.jpg">
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<p> Il naftalene o naftalina, formula molecolare, C14H8, a temperatura ambiente
-			passa dallo stato solido a quello di vapore.</p>
-		</td>
-		<td>
-			<img width="200" src="Immagini\Policiclici\Naftalene.JPG">
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<p>L'antracene<p/>
-		</td>
-		<td>
-			<img width="200" src="Immagini\Policiclici\Antracene.JPG">
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<p>Il fenatrene, C14H10, la cui struttura saturata è presente in molte
-		molecole biologiche, come colesterolo, ormoni steroidei e acidi biliari.</p>>
-		</td>
-		<td>
-			<img width="200" src="Immagini\Policiclici\Fenantrene.JPG">
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<p>Il benzo[a]pirene, C20H12, presente nel fumo delle sigarette e avente
-		effetti cancerogeni.</p>
-		</td>
-		<td>
-			<img width="200" src="Immagini\Policiclici\Benzoapirene.JPG">
-		</td>
-	</tr>
+	<table cellpadding="25" id="struttura" class="tabelline">			<!--struttura-->
+		<tr>
+			<td align="center" colspan="2">
+				<h3  >STRUTTURA</h3>
+			</td>
+		</tr>
+		<tr>
+			<td width="80%">
+				<p> Le molecole degli IPA sono generalmente planari
+				a meno di impedimenti sterici e sono costituite da un gruppo di atomi di 
+				carbonio ibridati sp2 legati tra loro in anelli condensati, che hanno in 
+				comune almeno due atomi di carbonio adiacenti, ciascuno con il proprio orbitale
+				pz occupato da un elettrone spaiato.
+				Tali orbitali pz vanno a formare un sistema aromatico in cui vengono
+				condivisi 4n+2 elettroni, non disposti a formare doppi legami definiti,
+				bensì delocalizzati sull'intera parte della molecola interessata dal fenomeno.
+				Gli idrocarburi policiclici più conosciuti sono:		</p>
+			</td>
+			<td> 
+				<img style="filter: invert(100%);width: 100%;" src="Immagini\Policiclici\Benzopireni.png">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p> Gli areni policiclici concatenati costituiti da due
+				o più anelli benzenici uniti da un legame semplice carbonio-carbonio; il più
+				comune è il difenile </p></td>
+				</p>
+			</td>
+			<td> 
+				<img style="filter: invert(100%);width: 100%;" src="Immagini\Policiclici\Difenile.JPG">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p> Gli areni policiclici condensati costituiti da due o 
+				più anelli benzenici e ogni coppia di anelli ha due atomi di carbonio
+				in comune. I più comuni sono:</p>
+			</td> 
+			<td>
+				<img style="filter: invert(100%);width: 100%;" src="Immagini\Policiclici\Aromatici_Condensati.jpg">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p> Il naftalene o naftalina, formula molecolare, C14H8, a temperatura ambiente
+				passa dallo stato solido a quello di vapore.</p>
+			</td>
+			<td>
+				<img style="filter: invert(100%);width: 100%;" src="Immagini\Policiclici\Naftalene.JPG">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>L'antracene</p>>
+			</td>
+			<td>
+				<img style="filter: invert(100%);width: 100%;" src="Immagini\Policiclici\Antracene.JPG">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Il fenatrene, C14H10, la cui struttura saturata è presente in molte
+			molecole biologiche, come colesterolo, ormoni steroidei e acidi biliari.</p>>
+			</td>
+			<td>
+				<img style="filter: invert(100%);width: 100%;" src="Immagini\Policiclici\Fenantrene.JPG">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Il benzo[a]pirene, C20H12, presente nel fumo delle sigarette e avente
+			effetti cancerogeni.</p>
+			</td>
+			<td>
+				<img style="filter: invert(100%);width: 100%;" src="Immagini\Policiclici\Benzoapirene.JPG">
+			</td>
+		</tr>
 	</table>
 
-	<table align="center" width="75%">
-	<tr>
+	<table cellpadding="25" id="posizione" class="tabelline">			<!--posizione-->
+		<tr>
+			<td colspan="2"align="center">
+				<H3>ISOMERIA DI POSIZIONE E GEOMETRICA<H3>
+
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p> L'isomeria di posizione dipende dalla posizione dei sostituenti, pertanto nella nomenclatura si numereranno gli atomi in modo che i sostituenti si trovino
+				nella posizione con numerazione inferiore, preferendo la numerazione in senso orario.</p> 
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p> L'isomerria geometrica dipende dalla disposizione dei sostituenti rispetto al piano dell'anello carbonioso, se i sostituenti sono dalla stessa parte sono
+				definiti CIS-nome del cicloalcano, se, invece, sono dalla parte opposta
+				vengono chimati TRANS-nome del cicloalcano. cis e trans sono diversi per proprietà fisiche e chimiche,
+				e, inoltre, non sono interscambiabili.</p> 
+			</td>
+		</tr>
+	</table>
+	
+	<table cellpadding="25" id="propieta" class="tabelline">			<!--propieta-->
+		<tr>
+			<td colspan="2"align="center">
+				<H3>PROPRIETA' CHIMICO-FISICHE E COMPORTAMENTO AMBIENTALE<H3>
+
+			</td>
+		</tr>
+		<tr> 
+			<td>
+				<p> In condizioni normali gli IPA si presentano tutti allo stato solido.
+				La tensione di vapore di tali composti è generalmente bassa, ed inversamente
+				proporzionale al numero di anelli contenuti. I composti a peso molecolare
+				basso generalmente sublimano a temperatura ambiente, fenomeno particolarmente
+				rilevante nei naftaleni.</p>
+			</td>
+		</tr>
+		<tr> 
+			<td>
+				<p>Gli IPA sono o relativamente poco solubili o del tutto insolubili in acqua;
+				la solubilità per sommi capi diminuisce all'aumentare del loro peso molecolare.
+				Sono altamente lipofili e questa loro caratteristica ne influenza fortemente
+				il bioaccumulo, il processo mediante il quale alcune sostanze tossiche inquinanti organici persistenti, 
+				sostanze chimiche molto resistenti alla decomposizione, si accumulano all'interno di un organismo, in
+				condizioni superiori a quelle riscontrate nell'ambiente circostante.</p>
+			</td>
+		</tr>
+		<tr> 
+			<td>
+				<p> I composti più grandi, meno solubili in acqua e meno volatili, a 
+				causa di queste proprietà si trovano, nell'ambiente principalmente nel suolo,
+				nei sedimenti oleosi, in acqua o in aria; anche se, però, sono anche una 
+				componente preoccupante del particolato atmosferico, adesi superficialmente 
+				alle particelle sospese nell'aria. </p>
+			</td>
+		</tr>
+	</table>
+
+	<br>
+
+	
+
+	<div id="owo">
+		<svg id="etero" height="37.33" viewBox="0 0 227 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M3.276 2.988V11.376H12.42V14.076H3.276V22.716H13.5V25.416H0V0.288001H13.5V2.988H3.276Z" fill="black"/>
+			<path d="M33.901 0.324V2.988H27.061V25.416H23.785V2.988H16.909V0.324H33.901Z" fill="black"/>
+			<path d="M41.2096 2.988V11.376H50.3536V14.076H41.2096V22.716H51.4336V25.416H37.9336V0.288001H51.4336V2.988H41.2096Z" fill="black"/>
+			<path d="M69.6026 25.416L63.6266 15.156H59.6666V25.416H56.3906V0.324H64.4906C66.3866 0.324 67.9826 0.648 69.2786 1.296C70.5986 1.944 71.5826 2.82 72.2306 3.924C72.8786 5.028 73.2026 6.288 73.2026 7.704C73.2026 9.432 72.6986 10.956 71.6906 12.276C70.7066 13.596 69.2186 14.472 67.2266 14.904L73.5266 25.416H69.6026ZM59.6666 12.528H64.4906C66.2666 12.528 67.5986 12.096 68.4866 11.232C69.3746 10.344 69.8186 9.168 69.8186 7.704C69.8186 6.216 69.3746 5.064 68.4866 4.248C67.6226 3.432 66.2906 3.024 64.4906 3.024H59.6666V12.528Z" fill="black"/>
+			<path d="M89.669 25.668C87.341 25.668 85.217 25.128 83.297 24.048C81.377 22.944 79.853 21.42 78.725 19.476C77.621 17.508 77.069 15.3 77.069 12.852C77.069 10.404 77.621 8.208 78.725 6.264C79.853 4.296 81.377 2.772 83.297 1.692C85.217 0.588 87.341 0.0360003 89.669 0.0360003C92.021 0.0360003 94.157 0.588 96.077 1.692C97.997 2.772 99.509 4.284 100.613 6.228C101.717 8.172 102.269 10.38 102.269 12.852C102.269 15.324 101.717 17.532 100.613 19.476C99.509 21.42 97.997 22.944 96.077 24.048C94.157 25.128 92.021 25.668 89.669 25.668ZM89.669 22.824C91.421 22.824 92.993 22.416 94.385 21.6C95.801 20.784 96.905 19.62 97.697 18.108C98.513 16.596 98.921 14.844 98.921 12.852C98.921 10.836 98.513 9.084 97.697 7.596C96.905 6.084 95.813 4.92 94.421 4.104C93.029 3.288 91.445 2.88 89.669 2.88C87.893 2.88 86.309 3.288 84.917 4.104C83.525 4.92 82.421 6.084 81.605 7.596C80.813 9.084 80.417 10.836 80.417 12.852C80.417 14.844 80.813 16.596 81.605 18.108C82.421 19.62 83.525 20.784 84.917 21.6C86.333 22.416 87.917 22.824 89.669 22.824Z" fill="black"/>
+			<path d="M105.37 12.852C105.37 10.404 105.922 8.208 107.026 6.264C108.13 4.296 109.63 2.76 111.526 1.656C113.446 0.552001 115.57 0 117.898 0C120.634 0 123.022 0.66 125.062 1.98C127.102 3.3 128.59 5.172 129.526 7.596H125.602C124.906 6.084 123.898 4.92 122.578 4.104C121.282 3.288 119.722 2.88 117.898 2.88C116.146 2.88 114.574 3.288 113.182 4.104C111.79 4.92 110.698 6.084 109.906 7.596C109.114 9.084 108.718 10.836 108.718 12.852C108.718 14.844 109.114 16.596 109.906 18.108C110.698 19.596 111.79 20.748 113.182 21.564C114.574 22.38 116.146 22.788 117.898 22.788C119.722 22.788 121.282 22.392 122.578 21.6C123.898 20.784 124.906 19.62 125.602 18.108H129.526C128.59 20.508 127.102 22.368 125.062 23.688C123.022 24.984 120.634 25.632 117.898 25.632C115.57 25.632 113.446 25.092 111.526 24.012C109.63 22.908 108.13 21.384 107.026 19.44C105.922 17.496 105.37 15.3 105.37 12.852Z" fill="black"/>
+			<path d="M137.678 0.324V25.416H134.402V0.324H137.678Z" fill="black"/>
+			<path d="M142.038 12.852C142.038 10.404 142.59 8.208 143.694 6.264C144.798 4.296 146.298 2.76 148.194 1.656C150.114 0.552001 152.238 0 154.566 0C157.302 0 159.69 0.66 161.73 1.98C163.77 3.3 165.258 5.172 166.194 7.596H162.27C161.574 6.084 160.566 4.92 159.246 4.104C157.95 3.288 156.39 2.88 154.566 2.88C152.814 2.88 151.242 3.288 149.85 4.104C148.458 4.92 147.366 6.084 146.574 7.596C145.782 9.084 145.386 10.836 145.386 12.852C145.386 14.844 145.782 16.596 146.574 18.108C147.366 19.596 148.458 20.748 149.85 21.564C151.242 22.38 152.814 22.788 154.566 22.788C156.39 22.788 157.95 22.392 159.246 21.6C160.566 20.784 161.574 19.62 162.27 18.108H166.194C165.258 20.508 163.77 22.368 161.73 23.688C159.69 24.984 157.302 25.632 154.566 25.632C152.238 25.632 150.114 25.092 148.194 24.012C146.298 22.908 144.798 21.384 143.694 19.44C142.59 17.496 142.038 15.3 142.038 12.852Z" fill="black"/>
+			<path d="M174.346 22.752H183.13V25.416H171.07V0.324H174.346V22.752Z" fill="black"/>
+			<path d="M189.885 0.324V25.416H186.609V0.324H189.885Z" fill="black"/>
+			<path d="M194.245 12.852C194.245 10.404 194.797 8.208 195.901 6.264C197.005 4.296 198.505 2.76 200.401 1.656C202.321 0.552001 204.445 0 206.773 0C209.509 0 211.897 0.66 213.937 1.98C215.977 3.3 217.465 5.172 218.401 7.596H214.477C213.781 6.084 212.773 4.92 211.453 4.104C210.157 3.288 208.597 2.88 206.773 2.88C205.021 2.88 203.449 3.288 202.057 4.104C200.665 4.92 199.573 6.084 198.781 7.596C197.989 9.084 197.593 10.836 197.593 12.852C197.593 14.844 197.989 16.596 198.781 18.108C199.573 19.596 200.665 20.748 202.057 21.564C203.449 22.38 205.021 22.788 206.773 22.788C208.597 22.788 210.157 22.392 211.453 21.6C212.773 20.784 213.781 19.62 214.477 18.108H218.401C217.465 20.508 215.977 22.368 213.937 23.688C211.897 24.984 209.509 25.632 206.773 25.632C204.445 25.632 202.321 25.092 200.401 24.012C198.505 22.908 197.005 21.384 195.901 19.44C194.797 17.496 194.245 15.3 194.245 12.852Z" fill="black"/>
+			<path d="M226.553 0.324V25.416H223.277V0.324H226.553Z" fill="black"/>
+			</svg>
+			
+			
+			
+			
+	</div>
+
+
+
+	<table cellpadding="25" >		<!--secondario-->
+		<tr>
+			<td>
+				<p>Gli idrocarburi aromatici eterociclici sono dei composti organici
+				ciclici nei quali uno o più atomi di carbonio dell'anello sono sostituiti da un
+				altro atomo detto eteroatomo.<br>
+			
+				Eteroatomi comuni sono zolfo, fosforo, ossigeno e azoto, mentre quelli meno 
+				frequenti sono arsenico e selenio.<br>
+				I composti eterociclic sono assai diffusi in natura: sono presenti ne glucidi
+				e nei polisaccaridi, nel sistema del pirrolo nell'emoglobina, nella clorofilla 
+				e nei pigmenti biliari; i più semplici sono contenuti nel catrame di carbon fossile,
+				da cui possono essere estratti.</p>
+			</td> 
+		</tr>
+		<tr>
+			<td colspan="2">
+				<div class="menu-flex">
+					<div class="menu-inf">
+						<div class="menu-saltello" style="grid-column: 1 / 3;"><h3><a onClick="com()">Composti</a></h3></div>
+						<div class="menu-saltello"><h3><a onClick="sud()">Suddivisione</a></h3></div>	
+						<div class="menu-saltello"><h3><a onClick="det()">Dettagli</a></h3></div>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+	
+	<br>
+
+		<a onClick="momento()">
+			<div id="freccio">	
+				<svg width="75px "version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					viewBox="0 0 491.996 491.996" style="enable-background:new 0 0 491.996 491.996;" xml:space="preserve">
+					<g>
+						<g>
+							<path d="M484.132,124.986l-16.116-16.228c-5.072-5.068-11.82-7.86-19.032-7.86c-7.208,0-13.964,2.792-19.036,7.86l-183.84,183.848
+								L62.056,108.554c-5.064-5.068-11.82-7.856-19.028-7.856s-13.968,2.788-19.036,7.856l-16.12,16.128
+								c-10.496,10.488-10.496,27.572,0,38.06l219.136,219.924c5.064,5.064,11.812,8.632,19.084,8.632h0.084
+								c7.212,0,13.96-3.572,19.024-8.632l218.932-219.328c5.072-5.064,7.856-12.016,7.864-19.224
+								C491.996,136.902,489.204,130.046,484.132,124.986z"/>
+						</g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+					<g>
+					</g>
+			   </svg>
+			</div>	
+			</a>
+
+	<table cellpadding="25" id="composti" class="tabelline" >			<!--composti-->
+		<tr>
+			<td colspan="2"align="center">
+				<H3>SINTESI DEI COMPOSTI<H3>
+			</td>
+		</tr>
+		<tr>
+			<td  colspan="2"align="center"> 
+				<p>I composti eterociclici trovano applicazione in diversi settori:</p> 
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p> Industria farmaceutica, si usano i derivati del pizolo come antipiretici e analgesici,
+			i derivati della chinolina e tiazolo come antibatterici, i derivati dell'acridina
+			come antimalarici.</p>
+			</td>
+			<td>
+
+			</td>
+		</tr>
+		<tr>
+			<td> 
+				<p> dei coloranti, vengono impiegati l'indaco, il tioindaco e le cianine.</p>
+			</td>
+			<td>
+
+			</td>
+		</tr>
+			<td> 
+				<p> delle resine, il carbazolo e il cumarone.</p>
+			</td>
+			<td>
+
+			</td>
+		</tr>
+			<td> 
+				<p>Uso industriale, come solventi, piridina, tioindaco e cianine.</p>
+			</td>
+			<td>
+
+			</td>
+		</tr>
+	</table>
+
+	<table cellpadding="25" id="suddivisione" class="tabelline">			<!--suddivisione-->
+		<tr>
+			<td align="center">
+				<H3>SUDDIVISIONE ETEROCICLICI<H3>
+			</td>
+		</tr>
+		<tr>
+			<td> 
+				<p>In base al numero complessivo di atomi che formano l'anello,
+					tra i quali troviamo uno o più eteroaromi, che formano l'anello, i composti
+					a un anello possono così essere classificati:</p>
+			</td> 
+		</tr>
+		<tr>
+			<td> 
+				<p>Triatomici, ossido di etilene.</p>
+			</td>
+		</tr>
+		<tr>
+			<td> 
+				<p>Tetratomici, ossido di trimetilene.</p>
+			</td>
+		</tr>
+		<tr>
+			<td> 
+				<p>Pentatomici, furano, tiofene e pirazolo.</p>
+			</td>
+		</tr>
+		<tr>
+			<td> 
+				<p>Esatomici, pirimidina e piridina.</p>
+			</td>
+		</tr>
+	</table>
+
+	<table cellpadding="25" id="dettaglio" class="tabelline" >			<!--dettaglio-->
+		<tr>
+			<td colspan="4" align="center">
+				<H3>FOCUS ON<H3>
+			</td>
+		</tr>
+		<tr>
+			<td width="40%">
+				<h3>PIRIMIDINA</h3> <br>
+				<p>Composta da un anello esatomico 
+					con 2 atomi di azoto, dalla quale derivano le 3 basi azotate, citosina, timina
+					e uracile, presenti nei nucleotidi delle molecole di DNA e RNA.</p>
+			</td>
+			<td colspan="3" align="center">
+				<img style="filter: invert(100%);width: fit-content;" src="Immagini\Policiclici\Pirimidina.JPG">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>IMIDAZOLO</h3> <br>
+				<p>Composto da un anello pentatomico con 2 atomi di azoto,
+					il suo sistema si trova nell'amminoacido istidina, con un ruolo importante 
+					nelle reazioni catalizzate da enzimi. per decarbossilazione (perdita di una molecola di CO2)
+					dell'istidina, si forma l'istamina, rilasciata nei tessuti in seguito a ipersensibilità
+					allergica o nella risposta infiammatoria. </p>
+			</td>
+			<td colspan="3" align="center">
+				<img style="filter: invert(100%);width: fit-content;" src="Immagini\Policiclici\Imidazolo.JPG">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>PURINA</h3> <br>
+				<p>Costituita da due anelli condensati, uno esatomico pirimidinico e uno
+					pentatomico imidazolico. Il suo sistema si trova nella caffeina del caffè e delle bevante
+					a base di cola e nella teina del tè. Le basi azotate dell'adenina e della 
+					guanina, presenti nei nucleotidi di DNA e RNA, sono derivati della purina.
+					La nicotinammide (derivato delle piridina) e l'adenina (derivato della purina) sonno
+					presenti nella nicotinammide-adenin-dinucleotide (NAD), enzima fondamentale nella respirazione 
+					cellulare</p>
+			</td>
+			<td>
+				<img style="filter: invert(100%);width: fit-content;" src="Immagini\Policiclici\Purina.JPG">
+			</td>
+			<td>
+				<img style="filter: invert(100%);width: fit-content;" src="Immagini\Policiclici\Caffeina_Teina.JPG">
+			</td>
+			<td>
+				<img style="filter: invert(100%);width: fit-content;" src="Immagini\Policiclici\AcidoUrico.JPG">
+			</td>
+		</tr>
+
+	
+	</table>
+</div>	
 		
-		<td colspan="2"align="center"><H3>ISOMERIA DI POSIZIONE E GEOMETRICA<H3></td>
-	</tr>
-	<tr>
-		<td><p> L'isomeria di posizione dipende dalla posizione dei sostituenti, pertanto nella nomenclatura si numereranno gli atomi in modo che i sostituenti si trovino
-		 nella posizione con numerazione inferiore, preferendo la numerazione in senso orario.</p> </td>
-	</tr>
-	<tr>
-		<td><p> L'isomerria geometrica dipende dalla disposizione dei sostituenti rispetto al piano dell'anello carbonioso, se i sostituenti sono dalla stessa parte sono
-		definiti CIS-nome del cicloalcano, se, invece, sono dalla parte opposta
-		 vengono chimati TRANS-nome del cicloalcano. cis e trans sono diversi per proprietà fisiche e chimiche,
-		  e, inoltre, non sono interscambiabili.</p> </td>
 	
-	</tr>
-	</table>
-	<table align="center" width="75%">
-	<tr>
-		
-		<td colspan="2"align="center"><H3>PROPRIETA' CHIMICO-FISICHE E COMPORTAMENTO AMBIENTALE<H3></td>
-	</tr>
-	<tr> 
-		<td><p> In condizioni normali gli IPA si presentano tutti allo stato solido.
-		La tensione di vapore di tali composti è generalmente bassa, ed inversamente
-		proporzionale al numero di anelli contenuti. I composti a peso molecolare
-		basso generalmente sublimano a temperatura ambiente, fenomeno particolarmente
-		rilevante nei naftaleni.</p></td>
-	</tr>
-	<tr> 
-		<td><p>Gli IPA sono o relativamente poco solubili o del tutto insolubili in acqua;
-		la solubilità per sommi capi diminuisce all'aumentare del loro peso molecolare.
-		Sono altamente lipofili e questa loro caratteristica ne influenza fortemente
-		il bioaccumulo, il processo mediante il quale alcune sostanze tossiche inquinanti organici persistenti, 
-		sostanze chimiche molto resistenti alla decomposizione, si accumulano all'interno di un organismo, in
-		condizioni superiori a quelle riscontrate nell'ambiente circostante.</p></td>
-	</tr>
-	<tr> 
-		<td><p> I composti più grandi, meno solubili in acqua e meno volatili, a 
-		causa di queste proprietà si trovano, nell'ambiente principalmente nel suolo,
-		nei sedimenti oleosi, in acqua o in aria; anche se, però, sono anche una 
-		componente preoccupante del particolato atmosferico, adesi superficialmente 
-		alle particelle sospese nell'aria. </p></td>
-	</tr>
-	</table>
-	<h1 align="center"><strong>AROMATICI ETEROCICLICI</STRONG></h1>
-	<hr>
-	<table>
-		<tr><td><p>Gli idrocarburi aromatici eterociclici sono dei composti organici
-		ciclici nei quali uno o più atomi di carbonio dell'anello sono sostituiti da un
-		altro atomo detto eteroatomo.<br>
-	
-		Eteroatomi comuni sono zolfo, fosforo, ossigeno e azoto, mentre quelli meno 
-		frequenti sono arsenico e selenio.<br>
-		I composti eterociclic sono assai diffusi in natura: sono presenti ne glucidi
-		e nei polisaccaridi, nel sistema del pirrolo nell'emoglobina, nella clorofilla 
-		e nei pigmenti biliari; i più semplici sono contenuti nel catrame di carbon fossile,
-		da cui possono essere estratti.</p>
-		
-	
-	</td> 
-	<td valign="top" width="20%" height="20%">
-	<img width="100%" src="Immagini\Policiclici\StrutturaIdrocarburo.png">
-	
-	</table>
-	<table align="center" width="75%">
-	<tr>
-		<td colspan="2"align="center"><H3>SINTESI DEI COMPOSTI<H3></td>
-	</tr>
-	<tr>
-		<td  colspan="2"align="center"> I composti eterociclici trovano applicazione in diversi settori:</td>
-	</tr>
-	<tr>
-		<td>Industria farmaceutica, si usano i derivati del pizolo come antipiretici e analgesici,
-		i derivati della chinolina e tiazolo come antibatterici, i derivati dell'acridina
-		come antimalarici.
-		</td><td></td>
-	</tr>
-	<tr>
-		<td> Industria dei coloranti, vengono impiegati l'indaco, il tioindaco e le cianine.
-		 </td><td></td>
-	</tr>
-	<td> Industria delle resine, il carbazolo e il cumarone.</td><td></td>
-	</tr>
-	<td> Uso industriale, come solventi, piridina, tioindaco e cianine.
-		 </td><td></td>
-	</tr>
-	</table>
-		
-		<table align="center" width="75%">
-	<tr>
-		<td colspan="2"align="center"><H3>SUDDIVISIONE ETEROCICLICI<H3></td>
-	</tr>
-	<tr>
-		<td> In base al numero complessivo di atomi che formano l'anello,
-		tra i quali troviamo uno o più eteroaromi, che formano l'anello, i composti
-		a un anello possono così essere classificati:</td> <td></td>
-	</tr>
-	<tr>
-		<td> Triatomici, ossido di etilene.</td><td></td>
-	</tr>
-	<tr>
-		<td> Tetratomici, ossido di trimetilene.</td><td></td>
-	</tr>
-	<tr>
-		<td> Pentatomici, furano, tiofene e pirazolo.
-		</td><td></td>
-	</tr>
-	<tr>
-		<td> Esatomici, pirimidina e piridina.</td><td></td>
-	</tr>
-	
-	</table>
-	<table align="center" width="75%">
-	<tr>
-		<td colspan="2"align="center"><H3>SUDDIVISIONE ETEROCICLICI<H3></td>
-	</tr>
-	<tr>
-		<td> In base al numero complessivo di atomi che formano l'anello,
-		tra i quali troviamo uno o più eteroaromi, che formano l'anello, i composti
-		a un anello possono così essere classificati:</td> <td></td>
-	</tr>
-	<tr>
-		<td> Triatomici, ossido di etilene.</td><td></td>
-	</tr>
-	<tr>
-		<td> Tetratomici, ossido di trimetilene.</td><td></td>
-	</tr>
-	<tr>
-		<td> Pentatomici, furano, tiofene e pirazolo.
-		</td><td></td>
-	</tr>
-	<tr>
-		<td> Esatomici, pirimidina e piridina.</td><td></td>
-	</tr>
-	
-	</table>
-	<table align="center" width="75%">
-	<tr>
-		<td colspan="2"align="center"><H3>FOCUS ON<H3></td>
-	</tr>
-	<tr>
-		<td> PIRIMIDINA</td> <td>Composta da un anello esatomico 
-		con 2 atomi di azoto, dalla quale derivano le 3 basi azotate, citosina, timina
-		e uracile, presenti nei nucleotidi delle molecole di DNA e RNA.</td><td colspan="3" align="center"><img width="200" src="Immagini\Policiclici\Pirimidina.JPG"></td>
-	</tr>
-	<tr>
-		<td> IMIDAZOLO</td><td>Composto da un anello pentatomico con 2 atomi di azoto,
-		il suo sistema si trova nell'amminoacido istidina, con un ruolo importante 
-		nelle reazioni catalizzate da enzimi. per decarbossilazione (perdita di una molecola di CO2)
-		dell'istidina, si forma l'istamina, rilasciata nei tessuti in seguito a ipersensibilità
-		allergica o nella risposta infiammatoria. </td><td colspan="3" align="center"><img width="200" src="Immagini\Policiclici\Imidazolo.JPG"></td>
-	</tr>
-	<tr>
-		<td> PURINA</td><td>Costituita da due anelli condensati, uno esatomico pirimidinico e uno
-		pentatomico imidazolico. Il suo sistema si trova nella caffeina del caffè e delle bevante
-		a base di cola e nella teina del tè. Le basi azotate dell'adenina e della 
-		guanina, presenti nei nucleotidi di DNA e RNA, sono derivati della purina.
-		La nicotinammide (derivato delle piridina) e l'adenina (derivato della purina) sonno
-		presenti nella nicotinammide-adenin-dinucleotide (NAD), enzima fondamentale nella respirazione 
-		cellulare</td><td><img width="200" src="Immagini\Policiclici\Purina.JPG"></td>
-		</td><td><img width="200" src="Immagini\Policiclici\Caffeina_Teina.JPG">
-		<td><img width="200" src="Immagini\Policiclici\AcidoUrico.JPG"></tr>
-	</tr>
-	
-	
-	</table>
-		
-		
-	
-	
+	<script>transizione()</script>	
 	</body>
 </html>

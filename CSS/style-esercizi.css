@@ -208,6 +208,7 @@ body {
     font-family: 'Roboto', sans-serif;
     transition: 0.5s;
     height: 53px;
+    z-index: 1;
   }
   
   .celle {
@@ -320,3 +321,35 @@ body {
   .complete:hover:before, .complete:focus:before, .complete:active:before {
     right: 0;
   }
+
+  /* robo a destra */ /* robo a destra */ /* robo a destra */
+.mappola{
+  float: right;
+  margin-top: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* mappa idrocarburi */
+#robodestra {
+  display: grid;
+  grid-template-columns: 893.61px 66.39px;
+  grid-template-rows: 53px 0px 25px;
+}
+
+#schemolo {
+  border-radius: 10px 10px 10px 10px;
+  display: none;
+}
+
+#freccetto {
+  background-color: #333;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* fine */ /* fine */ /* fine */ /* fine */

@@ -79,3 +79,29 @@ function momento() {
     document.getElementById("freccia").style.transform = "rotate(180deg)";
 
 }
+
+// menu a destra //
+function mappadestra() {
+    var click = document.getElementById("robodestra");
+    if (click.style.gridTemplateRows === "53px 0px 25px"){
+        document.getElementById("robodestra").style.gridTemplateRows = "53px 540px 25px";
+        document.getElementById("schemolo").style.display = "block"; 
+        document.getElementById("freccetta").style.transform = "rotate(180deg)"; 
+    }
+    else {
+        document.getElementById("robodestra").style.gridTemplateRows = "53px 0px 25px";
+        document.getElementById("schemolo").style.display = "none";
+        document.getElementById("freccetta").style.transform = "rotate(0deg)";  
+    }
+}
+
+function zoom() {
+    if (document.getElementById("zoom").style.filter === "invert(100%)"){
+        document.getElementById("gigantifica").style.width = "300px";
+        document.getElementById("zoom").style.filter = "invert(0%)";       
+    }
+    else {
+        document.getElementById("gigantifica").style.width = "95%";
+        document.getElementById("zoom").style.filter = "invert(100%)";    
+    }
+}

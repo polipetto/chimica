@@ -74,6 +74,7 @@ table {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
 }
 
 /* mappa idrocarburi */
@@ -99,6 +100,7 @@ table {
 
  /* barra quella in alto */
  #barra {
+  z-index: 1;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -167,6 +169,7 @@ table {
     background-color: #6b7fff;
     width: 1fr;
     padding: 25px;
+    z-index: 0;
 }
 
 .frecciati a {
